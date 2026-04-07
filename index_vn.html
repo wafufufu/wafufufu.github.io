@@ -3,47 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nguyễn Quang Phú - Portfolio Product Manager & Business Analyst. Xây dựng giải pháp kết nối công nghệ và nhu cầu người dùng.">
-    <meta name="keywords" content="Product Manager, Business Analyst, Portfolio, Nguyễn Quang Phú, Phát triển phần mềm">
+    <meta name="description" content="Nguyễn Quang Phú — Sinh viên IT & Business Analyst. Kinh nghiệm thu thập yêu cầu từ 70+ stakeholders, 40+ user stories, 8 sprint agile. Tốt nghiệp RMIT.">
+    <meta name="keywords" content="Business Analyst, Product Manager, IT Graduate, Nguyễn Quang Phú, RMIT, Portfolio">
     <meta name="author" content="Nguyễn Quang Phú">
     <title>Nguyễn Quang Phú — Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Page Loader -->
-    <div class="page-loader" id="page-loader">
-        <div class="loader-spinner"></div>
-    </div>
-
-    <!-- Scroll Progress -->
+    <div class="page-loader" id="page-loader"><div class="loader-spinner"></div></div>
     <div class="scroll-progress" id="scroll-progress"></div>
-
-    <!-- Back to Top -->
     <button class="back-to-top" id="back-to-top" aria-label="Về đầu trang">↑</button>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">⟨PN/⟩</a>
             <button class="menu-toggle" id="menu-toggle" aria-label="Mở menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#experience">Kinh Nghiệm</a></li>
                 <li><a href="#projects">Dự Án</a></li>
                 <li><a href="#skills">Kỹ Năng</a></li>
                 <li><a href="#contact">Liên Hệ</a></li>
-                <li><a href="index.html" class="lang-switch">🇬🇧 English</a></li>
+                <li><a href="index.html" class="lang-switch">EN English</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero" id="hero">
         <canvas id="particles-canvas"></canvas>
         <div class="container">
@@ -53,600 +41,390 @@
                     Sẵn sàng cho cơ hội mới
                 </div>
                 <h1 class="hero-title">Xin chào, tôi là <span class="highlight">Phú</span></h1>
-                <h2 class="hero-subtitle">Xây Dựng Giải Pháp Kết Nối Công Nghệ & Nhu Cầu Người Dùng</h2>
+                <h2 class="hero-subtitle">Business Analyst & Cử Nhân Công Nghệ Thông Tin</h2>
                 <p class="hero-description">
-                    Tôi kết hợp kỹ năng kỹ thuật với tư duy lấy người dùng làm trung tâm để xây dựng sản phẩm mà mọi người thực sự sử dụng. 
-                    Với nền tảng Khoa học Máy tính và kinh nghiệm thực tế trong việc triển khai sản phẩm phần mềm, 
-                    tôi đam mê tìm hiểu sâu về vấn đề và chuyển đổi chúng thành giải pháp thực tế.
+                    Kinh nghiệm thực tế thu thập và phân tích yêu cầu từ 70+ stakeholders. 
+                    Chuyển đổi nhu cầu kinh doanh thành 40+ user stories, BRDs và acceptance criteria qua 8 sprint agile. 
+                    Nền tảng kỹ thuật giúp kết nối hiệu quả giữa stakeholders và đội phát triển.
                 </p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">Xem Dự Án ↓</a>
                     <a href="#contact" class="btn btn-secondary">Liên Hệ →</a>
                 </div>
+                <div class="hero-education">
+                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
+                    <span><strong>Cử nhân Công Nghệ Thông Tin</strong> — RMIT University HCMC · Tốt nghiệp Tháng 3/2026</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <hr class="section-sep">
+
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title reveal">Tại Sao Chọn Tôi?</h2>
+            <div class="section-header reveal">
+                <div class="section-label">
+                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                    Giới thiệu
+                </div>
+                <h2 class="section-title">Tại Sao Chọn Tôi?</h2>
+                <div class="section-divider"></div>
+            </div>
             <div class="about-content reveal">
                 <div class="about-text">
                     <p>
-                        Là một <strong>sinh viên Khoa học Máy tính</strong> đã xây dựng và triển khai sản phẩm thực tế, tôi mang đến sự kết hợp độc đáo 
-                        giữa chiều sâu kỹ thuật và tư duy lấy người dùng làm trung tâm. Tôi đã trải nghiệm toàn bộ hành trình — từ nghiên cứu người dùng đến 
-                        triển khai và đo lường tác động.
+                        Là <strong>cử nhân Công Nghệ Thông Tin từ RMIT University</strong>, tôi mang đến sự kết hợp giữa chiều sâu kỹ thuật 
+                        và tư duy lấy người dùng làm trung tâm. Tôi đã trải nghiệm toàn bộ hành trình — từ thu thập yêu cầu 
+                        đến triển khai và đo lường tác động. Nền tảng kỹ thuật giúp tôi giao tiếp hiệu quả giữa stakeholders và đội phát triển.
                     </p>
-                    <p>
-                        Những gì tôi mang lại:
-                    </p>
+                    <p>Những gì tôi mang lại:</p>
                     <ul class="about-list stagger-children">
-                        <li><strong>Tư Duy Ưu Tiên Vấn Đề</strong> — Tôi bắt đầu bằng việc hiểu vấn đề, không phải nhảy vào giải pháp</li>
-                        <li><strong>Hiểu Biết Kỹ Thuật + Người Dùng</strong> — Tôi nói được cả ngôn ngữ kỹ sư lẫn người dùng một cách thông thạo</li>
-                        <li><strong>Quyết Định Dựa Trên Dữ Liệu</strong> — Tôi sử dụng nghiên cứu và số liệu để xác thực ý tưởng, không chỉ trực giác</li>
-                        <li><strong>Người Xây Dựng Thực Tế</strong> — Tôi đã ra mắt sản phẩm thực sự, không chỉ là ý tưởng hay mockup</li>
+                        <li><strong>Tư Duy Ưu Tiên Yêu Cầu</strong> — Bắt đầu bằng việc hiểu vấn đề qua thu thập có cấu trúc, không nhảy vào giải pháp</li>
+                        <li><strong>Cầu Nối Kỹ Thuật + Kinh Doanh</strong> — Nói được cả ngôn ngữ kỹ sư lẫn stakeholder, chuyển đổi nhu cầu thành đặc tả</li>
+                        <li><strong>Quyết Định Dựa Trên Dữ Liệu</strong> — Sử dụng nghiên cứu, metrics và A/B testing để xác thực yêu cầu</li>
+                        <li><strong>Người Xây Dựng Thực Tế</strong> — Đã ra mắt sản phẩm thực và hiểu SDLC từ cả góc nhìn BA lẫn developer</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <hr class="section-sep">
+
+    <!-- Experience -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">
+                    <span class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span>
+                    Kinh nghiệm
+                </div>
+                <h2 class="section-title">Kinh Nghiệm Làm Việc</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="experience-timeline reveal">
+                <div class="exp-item">
+                    <div class="exp-date">Tháng 3/2025 – Tháng 10/2025 · 8 tháng</div>
+                    <div class="exp-role">Business Analyst & Developer</div>
+                    <div class="exp-company">IntelliFix — Extension VS Code Tích Hợp AI · SSET</div>
+                    <ul class="exp-bullets">
+                        <li><strong>Thu Thập Yêu Cầu & Quản Lý Stakeholders:</strong> Thực hiện thu thập yêu cầu từ 70+ stakeholders (20+ phỏng vấn chuyên sâu, 50+ khảo sát có cấu trúc) tại 3 trường đại học. Xác định vấn đề: 73% mất 30+ phút debug lỗi, 60% cân nhắc bỏ học lập trình</li>
+                        <li><strong>Phân Tích Nghiệp Vụ & Tài Liệu Hóa:</strong> Phân tích thị trường cạnh tranh và tài liệu hóa yêu cầu chức năng/phi chức năng theo BRD. Tạo 40+ user stories với acceptance criteria, use cases và UML diagrams cho đội 5 người (2 FE, 2 BE, 1 QA)</li>
+                        <li><strong>Ưu Tiên Yêu Cầu & Truy Xuất:</strong> Áp dụng RICE framework ưu tiên 50+ backlog items. Duy trì requirements traceability matrix qua 8 sprint agile 2 tuần</li>
+                        <li><strong>UAT & Validation:</strong> Điều phối UAT với 50+ beta users qua 3 vòng test, thu thập 200+ feedback. Giảm onboarding từ 5 xuống 3 bước (giảm 50% tỷ lệ bỏ dở)</li>
+                        <li><strong>Phân Tích Tác Động:</strong> Theo dõi KPIs: giảm 60% thời gian debug, tỷ lệ kích hoạt 40%, đánh giá 4.2/5. Tài liệu hóa 3 change requests sau launch</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-date">Dự Án Học Thuật</div>
+                    <div class="exp-role">Business Analyst & System Developer</div>
+                    <div class="exp-company">Hệ Thống Quản Lý Mượn Thiết Bị Trường Đại Học</div>
+                    <ul class="exp-bullets">
+                        <li><strong>Phân Tích Yêu Cầu:</strong> Thu thập yêu cầu từ nhân viên, sinh viên và quản trị viên. Tạo BRD với use case diagrams, activity diagrams, và 3 user personas với phân quyền</li>
+                        <li><strong>Triển Khai:</strong> Chuyển đổi yêu cầu thành đặc tả kỹ thuật, xây dựng 6 tính năng bao gồm catalog thiết bị, đặt chỗ, và dashboard báo cáo</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-date">Dự Án Học Thuật · Cá Nhân</div>
+                    <div class="exp-role">Business Analyst & Full-Stack Developer</div>
+                    <div class="exp-company">RENTMATE — Nền Tảng Cho Thuê Nhà (Two-Sided Marketplace)</div>
+                    <ul class="exp-bullets">
+                        <li><strong>Yêu Cầu & Ưu Tiên:</strong> Phỏng vấn stakeholders, tạo personas và journey maps. Phát triển SRS với MoSCoW (Must: đăng tin, tìm kiếm, xác thực; Should: nhắn tin, tài liệu)</li>
+                        <li><strong>Triển Khai & UAT:</strong> Giải pháp full-stack (Spring Boot, React, PostgreSQL). UAT với 10 users, xác thực 6 tính năng cốt lõi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-sep">
+
+    <!-- Projects -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title reveal">Dự Án Nổi Bật</h2>
-            <p class="section-subtitle reveal">Từ ý tưởng đến triển khai — xây dựng giải pháp giải quyết vấn đề thực tế</p>
-            
-            <!-- IntelliFix Project -->
+            <div class="section-header reveal">
+                <div class="section-label">
+                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+                    Dự án
+                </div>
+                <h2 class="section-title">Dự Án Nổi Bật</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Từ ý tưởng đến triển khai — xây dựng giải pháp giải quyết vấn đề thực tế</p>
+            </div>
+
+            <!-- IntelliFix -->
             <div class="project-card reveal">
                 <div class="project-header">
-                    <h3 class="project-title">🧠 IntelliFix — Extension VS Code Tích Hợp AI</h3>
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">
+                        <span class="icon icon-lg"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
+                        IntelliFix — Extension VS Code Tích Hợp AI
+                    </h3>
                     <div class="project-meta">
                         <p><strong>Tổ chức:</strong> Khoa Khoa học, Kỹ thuật & Công nghệ — SSET</p>
                         <p><strong>Thời gian:</strong> Tháng 3/2025 – Tháng 10/2025 (8 tháng)</p>
-                        <p><strong>Quy mô nhóm:</strong> 5 thành viên  |  <strong>Vai trò:</strong> Product Lead & Developer</p>
-                        <p><strong>Loại:</strong> Dự Án Thực Tập</p>
+                        <p><strong>Quy mô nhóm:</strong> 5 thành viên  ·  <strong>Vai trò:</strong> Business Analyst & Developer</p>
+                        <p><strong>Loại:</strong> Dự Án Thực Tập  ·  <strong>Đã Xuất Bản trên VS Code Marketplace</strong></p>
                     </div>
                     <div class="project-tags">
-                        <span class="tag">Chiến Lược Sản Phẩm</span>
-                        <span class="tag">Nghiên Cứu Người Dùng</span>
+                        <span class="tag">Thu Thập Yêu Cầu</span>
+                        <span class="tag">BRD</span>
+                        <span class="tag">User Stories</span>
+                        <span class="tag">RICE Framework</span>
                         <span class="tag">Agile/Scrum</span>
-                        <span class="tag">Ra Mắt</span>
-                        <span class="tag">Đã Xuất Bản trên VS Code Marketplace</span>
+                        <span class="tag">UAT</span>
+                        <span class="tag">A/B Testing</span>
+                        <span class="tag">TypeScript</span>
                     </div>
                 </div>
-                
+
                 <div class="project-content collapsed" id="project-1-content">
                     <div class="project-section">
                         <h4>Khám Phá: Nhận Diện Vấn Đề & Nghiên Cứu</h4>
-                        <p>
-                            Thực hiện nghiên cứu người dùng toàn diện với 20+ lập trình viên mới qua phỏng vấn 1-1 và khảo sát (50+ phản hồi) tại 3 trường đại học. 
-                            Áp dụng phương pháp nghiên cứu có cấu trúc bao gồm nghiên cứu quan sát và phân tích điểm đau để xác định các rào cản quan trọng trong hành trình học lập trình.
-                        </p>
+                        <p>Thu thập yêu cầu toàn diện từ 70+ stakeholders (20+ phỏng vấn, 50+ khảo sát) tại 3 trường đại học. Áp dụng phương pháp nghiên cứu có cấu trúc để xác định rào cản trong hành trình học lập trình.</p>
                         <p><strong>Phát Hiện Chính:</strong></p>
                         <ul>
                             <li><strong>73% người dùng</strong> mất 30+ phút cho một thông báo lỗi</li>
-                            <li><strong>60% cân nhắc bỏ học</strong> lập trình do thông báo lỗi khó hiểu</li>
+                            <li><strong>60% cân nhắc bỏ học</strong> lập trình do lỗi khó hiểu</li>
                             <li><strong>Thời gian debug trung bình:</strong> 45 phút mỗi lỗi cho người mới</li>
-                            <li><strong>Điểm thất vọng chính:</strong> Thiếu giải pháp khả thi và ngữ cảnh giáo dục</li>
                         </ul>
-                        <blockquote class="insight">
-                            Insight Quan Trọng: "Tôi ước thông báo lỗi có thể giải thích bằng thuật ngữ đơn giản và chỉ cho tôi cách sửa" — Sinh viên IT
-                        </blockquote>
-                        <p><strong>Phân Tích Đối Thủ:</strong> Đánh giá Error Lens (chỉ hiển thị inline), GitHub Copilot (không tập trung giáo dục), và VS Code IntelliSense (không học từ lỗi). Xác định khoảng trống thị trường: không công cụ nào kết hợp giải thích AI với scaffolding giáo dục cho người mới.</p>
+                        <blockquote class="insight">Insight: "Tôi ước thông báo lỗi có thể giải thích bằng thuật ngữ đơn giản và chỉ cho tôi cách sửa" — Sinh viên IT</blockquote>
+                        <p><strong>Phân Tích Đối Thủ:</strong> Đánh giá Error Lens, GitHub Copilot, VS Code IntelliSense. Xác định khoảng trống: không công cụ nào kết hợp giải thích AI với scaffolding giáo dục.</p>
                     </div>
 
                     <div class="project-section">
-                        <h4>Định Nghĩa: Chiến Lược & Lập Kế Hoạch Sản Phẩm</h4>
-                        <p><strong>Tầm Nhìn Sản Phẩm:</strong> Biến thông báo lỗi từ điểm thất vọng thành cơ hội học tập, giúp lập trình viên mới học nhanh hơn với sự tự tin.</p>
-                        
-                        <p><strong>User Persona Mục Tiêu:</strong></p>
-                        <ul>
-                            <li><strong>Chính:</strong> Sinh viên IT & học viên bootcamp (0-2 năm kinh nghiệm) gặp khó khăn với lỗi khó hiểu</li>
-                            <li><strong>Phụ:</strong> Giảng viên lập trình cần công cụ giúp sinh viên debug độc lập</li>
-                        </ul>
-
-                        <p><strong>Ưu Tiên Tính Năng (RICE Framework):</strong></p>
+                        <h4>Định Nghĩa: Chiến Lược & Lập Kế Hoạch</h4>
+                        <p><strong>Tầm Nhìn:</strong> Biến thông báo lỗi thành cơ hội học tập cho lập trình viên mới.</p>
+                        <p><strong>Ưu Tiên Tính Năng (RICE):</strong></p>
                         <ol>
-                            <li><strong>One-Click Fix</strong> (RICE: 600) — Độ phủ cao, tác động vừa, công sức thấp</li>
-                            <li><strong>AI Error Explanations</strong> (RICE: 400) — Độ phủ cao, tác động cao, công sức vừa</li>
-                            <li><strong>Learn from Error Module</strong> (RICE: 131) — Độ phủ trung bình, tác động cao đến retention, công sức cao</li>
+                            <li><strong>One-Click Fix</strong> (RICE: 600)</li>
+                            <li><strong>AI Error Explanations</strong> (RICE: 400)</li>
+                            <li><strong>Learn from Error Module</strong> (RICE: 131)</li>
                         </ol>
+                        <p><strong>Metrics Thành Công:</strong> Giảm 60% thời gian debug, kích hoạt 40%, 10+ lần/tuần sử dụng</p>
+                    </div>
 
-                        <p><strong>Metrics Thành Công Đã Định Nghĩa:</strong></p>
+                    <div class="project-section">
+                        <h4>Xây Dựng: Thực Thi Agile</h4>
+                        <p>Dẫn dắt 8 sprint 2 tuần. Viết 40+ user stories. Quản lý backlog 50+ items. Duy trì requirements traceability matrix.</p>
                         <ul>
-                            <li>Chính: Giảm 60% thời gian giải quyết lỗi</li>
-                            <li>Tỷ lệ kích hoạt: 40% trong tuần đầu</li>
-                            <li>Sử dụng tính năng: 10+ lần/tuần/người dùng hoạt động</li>
-                            <li>Hài lòng người dùng: Theo dõi NPS score</li>
+                            <li><strong>Sprint 1-2:</strong> Nền tảng & engine phát hiện lỗi (4 ngôn ngữ)</li>
+                            <li><strong>Sprint 3-4:</strong> Tích hợp AI — phản hồi <3 giây, độ chính xác 90%+</li>
+                            <li><strong>Sprint 5-6:</strong> One-click fix 80%+ accuracy, khả năng undo</li>
+                            <li><strong>Sprint 7-8:</strong> Launch — tài liệu, onboarding, beta testing</li>
                         </ul>
                     </div>
 
                     <div class="project-section">
-                        <h4>Xây Dựng: Thực Thi Agile & Lãnh Đạo Liên Chức Năng</h4>
-                        <p><strong>Phương Pháp Agile:</strong> Dẫn dắt 8 sprint 2 tuần với lập kế hoạch có cấu trúc, daily standups, và retrospectives.</p>
-                        
-                        <p><strong>Điểm Nổi Bật Các Sprint:</strong></p>
-                        <ul>
-                            <li><strong>Sprint 1-2:</strong> Nền tảng & engine phát hiện lỗi (hỗ trợ 4 ngôn ngữ)</li>
-                            <li><strong>Sprint 3-4:</strong> Tích hợp AI — engine giải thích với thời gian phản hồi <3 giây, độ chính xác 90%+</li>
-                            <li><strong>Sprint 5-6:</strong> Tính năng tương tác — one-click fix với độ chính xác 80%+, khả năng undo</li>
-                            <li><strong>Sprint 7-8:</strong> Chuẩn bị launch — tài liệu, quy trình onboarding, beta testing</li>
-                        </ul>
-
-                        <p><strong>Quản Lý Nhóm Liên Chức Năng:</strong></p>
-                        <ul>
-                            <li>Điều phối 2 Frontend + 2 Backend engineers, đồng bộ thực thi kỹ thuật với tầm nhìn sản phẩm</li>
-                            <li>Viết 40+ user stories với acceptance criteria rõ ràng</li>
-                            <li>Quản lý backlog ưu tiên của 50+ items qua 8 sprints</li>
-                            <li>Tổ chức sprint reviews hàng tuần với giảng viên và thuyết trình stakeholder hàng tháng</li>
-                            <li>Giải quyết xung đột scope thông qua ưu tiên dựa trên dữ liệu và giao tiếp minh bạch</li>
-                        </ul>
-
-                        <p><strong>Quản Lý Stakeholder:</strong> Cân bằng nhu cầu của người dùng (đơn giản), engineers (khả thi kỹ thuật), và stakeholders học thuật (kết quả học tập) thông qua PRDs rõ ràng và các cuộc họp đồng bộ thường xuyên.</p>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Ra Mắt: Chiến Lược Go-to-Market & Beta Testing</h4>
-                        <p><strong>Chương Trình Beta Testing:</strong></p>
-                        <ul>
-                            <li>Tuyển 50+ early adopters từ 3 trường đại học</li>
-                            <li>Thực hiện 3 vòng usability testing</li>
-                            <li>Thu thập 200+ phản hồi qua khảo sát và phỏng vấn</li>
-                            <li>Iteration chính: Đơn giản hóa onboarding từ 5 xuống 3 bước (giảm 50% tỷ lệ bỏ dở)</li>
-                        </ul>
-
-                        <p><strong>Chiến Lược Launch:</strong></p>
-                        <ul>
-                            <li>Xuất bản lên <strong>VS Code Marketplace</strong> (10M+ người dùng hoạt động hàng tháng)</li>
-                            <li>Tạo video demo, bài viết Medium, và tài liệu toàn diện</li>
-                            <li>Phân phối qua cộng đồng developers (Reddit, Discord) và coding bootcamps</li>
-                            <li>Thiết lập kênh phản hồi (GitHub Issues, khảo sát người dùng) để cải tiến liên tục</li>
-                        </ul>
-
-                        <p><strong>Chiến Lược Tài Liệu:</strong> Đầu tư 20% thời gian dev tạo README, video hướng dẫn, FAQ, và troubleshooting guides — dẫn đến tỷ lệ kích hoạt 40% (tăng 15% từ 25% ban đầu).</p>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Đo Lường: Tác Động & Metrics</h4>
+                        <h4>Đo Lường: Tác Động</h4>
                         <div class="metrics-grid">
-                            <div class="metric">
-                                <div class="metric-value">60%</div>
-                                <div class="metric-label">Giảm thời gian debugging</div>
-                            </div>
-                            <div class="metric">
-                                <div class="metric-value">40%</div>
-                                <div class="metric-label">Tỷ lệ kích hoạt người dùng</div>
-                            </div>
-                            <div class="metric">
-                                <div class="metric-value">4 ngôn ngữ</div>
-                                <div class="metric-label">JS, Python, C++, Java</div>
-                            </div>
-                            <div class="metric">
-                                <div class="metric-value">4.2/5</div>
-                                <div class="metric-label">Đánh giá người dùng (30 ngày đầu)</div>
-                            </div>
+                            <div class="metric"><div class="metric-value">60%</div><div class="metric-label">Giảm thời gian debug</div></div>
+                            <div class="metric"><div class="metric-value">40%</div><div class="metric-label">Tỷ lệ kích hoạt</div></div>
+                            <div class="metric"><div class="metric-value">4.2/5</div><div class="metric-label">Hài lòng người dùng</div></div>
+                            <div class="metric"><div class="metric-value">70+</div><div class="metric-label">Stakeholders</div></div>
                         </div>
-
-                        <p><strong>Phân Tích Sử Dụng Tính Năng:</strong></p>
-                        <ul>
-                            <li>AI Explanation: 85% tỷ lệ sử dụng, 4.5/5 hài lòng</li>
-                            <li>One-Click Fix: 70% tỷ lệ sử dụng, 4.3/5 hài lòng</li>
-                            <li>Learn Module: 45% tỷ lệ sử dụng, 4.0/5 hài lòng (sau 3 iterations từ 30% ban đầu)</li>
-                            <li>Inline Errors: 95% tỷ lệ sử dụng, 4.6/5 hài lòng</li>
-                        </ul>
-
-                        <p><strong>Phản Hồi Người Dùng:</strong></p>
-                        <ul>
-                            <li>"Extension này đã tiết kiệm cho tôi hàng giờ thất vọng" — Sinh viên IT</li>
-                            <li>"Học sinh của tôi giờ debug độc lập được rồi" — Giảng viên Bootcamp</li>
-                        </ul>
+                        <p><strong>Sử Dụng Tính Năng:</strong> AI Explanation 85%, One-Click Fix 70%, Learn Module 45% (sau 3 iterations), Inline Errors 95%</p>
                     </div>
 
                     <div class="project-section">
-                        <h4>Cải Tiến: Tối Ưu Sau Launch</h4>
-                        <p><strong>3 Iterations Lớn Dựa Trên Dữ Liệu Người Dùng:</strong></p>
-                        
-                        <p><strong>Iteration 1 — Thiết Kế Lại Learn Module:</strong></p>
+                        <h4>Cải Tiến Sau Launch</h4>
                         <ul>
-                            <li><strong>Vấn Đề:</strong> Chỉ 30% tương tác với Learn Module</li>
-                            <li><strong>Phân Tích:</strong> Phản hồi người dùng tiết lộ giao diện phức tạp và thiếu theo dõi tiến độ</li>
-                            <li><strong>Giải Pháp:</strong> Đơn giản hóa UI, thêm chỉ báo tiến độ và yếu tố gamification</li>
-                            <li><strong>Kết Quả:</strong> Tương tác tăng lên 45% (+50% cải thiện)</li>
+                            <li><strong>Learn Module:</strong> 30%→45% engagement (+50% cải thiện)</li>
+                            <li><strong>Hiệu Năng:</strong> 5s→<2s phản hồi (cải thiện 60%)</li>
+                            <li><strong>Mở Rộng Ngôn Ngữ:</strong> Thêm C++ và Java, mở rộng 25% users</li>
                         </ul>
-
-                        <p><strong>Iteration 2 — Tối Ưu Hiệu Năng:</strong></p>
-                        <ul>
-                            <li><strong>Vấn Đề:</strong> Trễ 3-5 giây cho giải thích AI (người dùng phàn nàn)</li>
-                            <li><strong>Giải Pháp:</strong> Triển khai caching và tối ưu API calls</li>
-                            <li><strong>Kết Quả:</strong> Thời gian phản hồi giảm xuống <2 giây (cải thiện 60%)</li>
-                        </ul>
-
-                        <p><strong>Iteration 3 — Mở Rộng Hỗ Trợ Ngôn Ngữ:</strong></p>
-                        <ul>
-                            <li><strong>Vấn Đề:</strong> Yêu cầu người dùng về hỗ trợ ngôn ngữ bổ sung</li>
-                            <li><strong>Giải Pháp:</strong> Thêm hỗ trợ C++ và Java dựa trên phân tích nhu cầu</li>
-                            <li><strong>Kết Quả:</strong> Cơ sở người dùng mở rộng 25%</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Học Hỏi: Bài Học Chính</h4>
-                        <ul>
-                            <li><strong>Cách tiếp cận lấy người dùng làm trung tâm luôn thắng:</strong> Tính năng xây dựng từ điểm đau được xác thực có tỷ lệ chấp nhận cao gấp 3 lần so với tính năng giả định</li>
-                            <li><strong>Quyết định dựa trên dữ liệu ngăn lãng phí:</strong> Reviews metrics hàng tuần và A/B testing ngăn chặn việc xây dựng tính năng sai và hướng dẫn nỗ lực tối ưu</li>
-                            <li><strong>Iteration đánh bại hoàn hảo:</strong> Ship MVP và iterate dựa trên dữ liệu sử dụng thực tế hiệu quả hơn việc lập kế hoạch kéo dài</li>
-                            <li><strong>Tài liệu là sản phẩm:</strong> Tài liệu rõ ràng tương quan trực tiếp với tăng 15% tỷ lệ kích hoạt và retention cao gấp 2 lần</li>
-                            <li><strong>Đồng bộ liên chức năng là quan trọng:</strong> Giao tiếp thường xuyên và PRDs rõ ràng ngăn mất đồng bộ và đảm bảo delivery đúng hạn qua 8 sprints</li>
-                            <li><strong>Hiểu biết kỹ thuật giúp PM tốt hơn:</strong> Nền tảng CS giúp đánh giá khả thi, cam kết thực tế, và tạo lòng tin của nhóm kỹ thuật</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Kỹ Năng Đã Thể Hiện</h4>
-                        <p><strong>Product Management:</strong> Chiến lược sản phẩm, lập kế hoạch roadmap, ưu tiên tính năng (RICE), chiến lược go-to-market, định nghĩa & theo dõi metrics</p>
-                        <p><strong>Product Owner:</strong> Quản lý backlog, lập kế hoạch sprint, viết user story, acceptance criteria, cộng tác stakeholder, tạo điều kiện cho agile ceremonies</p>
-                        <p><strong>Business Analysis:</strong> Thu thập yêu cầu, nghiên cứu người dùng, phân tích đối thủ, phân tích dữ liệu, lập bản đồ quy trình, phân tích khoảng trống, phỏng vấn stakeholder</p>
-                        <p><strong>Leadership:</strong> Điều phối nhóm liên chức năng (5 thành viên), giải quyết xung đột, quản lý stakeholder, giao tiếp rõ ràng</p>
                     </div>
                 </div>
 
-                <button class="expand-btn" data-target="project-1-content" aria-label="Xem thêm chi tiết dự án">
-                    <span>Xem Thêm</span>
-                    <span class="arrow">▼</span>
-                </button>
-
+                <button class="expand-btn" data-target="project-1-content"><span>Xem Thêm</span><span class="arrow">▼</span></button>
                 <div class="project-links">
-                    <a href="https://marketplace.visualstudio.com/items?itemName=DinhNgocMinh.intellifix" class="btn btn-primary" target="_blank">Xem trên VS Code Marketplace →</a>
+                    <a href="https://marketplace.visualstudio.com/items?itemName=DinhNgocMinh.intellifix" class="btn btn-primary" target="_blank">VS Code Marketplace →</a>
+                    <a href="https://github.com/mintdunno/IntelliFix-Extension" class="btn btn-secondary" target="_blank">Source Code →</a>
                 </div>
             </div>
 
-            <!-- University Lending System Project -->
+            <!-- Equipment System -->
             <div class="project-card reveal">
                 <div class="project-header">
-                    <h3 class="project-title">🏫 Hệ Thống Quản Lý Thiết Bị Cho Mượn Trường Đại Học</h3>
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">
+                        <span class="icon icon-lg"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                        Hệ Thống Quản Lý Thiết Bị Cho Mượn
+                    </h3>
                     <div class="project-meta">
-                        <p><strong>Loại:</strong> Dự Án Học Thuật</p>
-                        <p><strong>Vai trò:</strong> Phân Tích & Phát Triển Hệ Thống</p>
+                        <p><strong>Loại:</strong> Dự Án Học Thuật  ·  <strong>Vai trò:</strong> BA & System Developer</p>
                     </div>
                     <div class="project-tags">
-                        <span class="tag">Phân Tích Hệ Thống</span>
-                        <span class="tag">Kỹ Thuật Yêu Cầu</span>
-                        <span class="tag">Thiết Kế Kiến Trúc</span>
-                        <span class="tag">Thiết Kế Hướng Đối Tượng</span>
+                        <span class="tag">Phân Tích Yêu Cầu</span><span class="tag">BRD</span><span class="tag">UML</span><span class="tag">OOP</span>
                     </div>
                 </div>
-                
                 <div class="project-content collapsed" id="project-2-content">
                     <div class="project-section">
-                        <h4>Khám Phá: Yêu Cầu Hệ Thống</h4>
-                        <p>
-                            Phân tích yêu cầu để quản lý kho thiết bị trường đại học và quy trình cho mượn. 
-                            Xác định các thách thức chính: theo dõi thiết bị qua nhiều khoa, hệ thống phân quyền phức tạp, 
-                            và quy trình đặt chỗ thủ công gây chậm trễ và mất thiết bị.
-                        </p>
-                        <blockquote class="insight">
-                            Thách Thức Chính: Thiết kế hệ thống cân bằng giữa dễ sử dụng cho sinh viên và theo dõi chặt chẽ cho quản trị viên
-                        </blockquote>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Xây Dựng: Thiết Kế Hệ Thống & Kiến Trúc</h4>
-                        <ul>
-                            <li><strong>Định Nghĩa Vai Trò Người Dùng</strong>: Xác định ba vai trò chính với quyền phân biệt:
-                                <ul>
-                                    <li>Sinh viên: Duyệt thiết bị, đặt chỗ, theo dõi lịch sử mượn</li>
-                                    <li>Nhân viên: Quản lý kho thiết bị, phê duyệt/từ chối yêu cầu, theo dõi trả lại</li>
-                                    <li>Quản trị viên: Cấu hình hệ thống, quản lý người dùng, phân tích và báo cáo</li>
-                                </ul>
-                            </li>
-                            <li><strong>Kiến Trúc Hướng Đối Tượng</strong>: Thiết kế hệ thống sử dụng nguyên tắc OOP để đảm bảo khả năng mở rộng và bảo trì</li>
-                            <li><strong>Quy Trình Hệ Thống</strong>: Lập tài liệu quy trình hoàn chỉnh cho đặt chỗ, cho mượn, trả lại và bảo trì thiết bị</li>
-                            <li><strong>Mô Hình Dữ Liệu</strong>: Tạo mô hình dữ liệu toàn diện thể hiện mối quan hệ giữa người dùng, thiết bị, đặt chỗ và giao dịch</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Ra Mắt: Tính Năng Chính Đã Triển Khai</h4>
-                        <div class="features-grid">
-                            <div class="feature">
-                                <h5>Catalog Thiết Bị</h5>
-                                <p>Kho có thể tìm kiếm với trạng thái sẵn có và thông số kỹ thuật</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Hệ Thống Đặt Chỗ</h5>
-                                <p>Đặt chỗ online với phòng tránh xung đột và thông báo tự động</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Quản Lý Phân Quyền</h5>
-                                <p>Kiểm soát truy cập dựa trên vai trò cho các loại người dùng khác nhau</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Theo Dõi Cho Mượn</h5>
-                                <p>Lịch sử kiểm toán đầy đủ về ai mượn cái gì và khi nào</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Dashboard Báo Cáo</h5>
-                                <p>Phân tích về mức độ sử dụng thiết bị và mô hình cho mượn</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Lập Lịch Bảo Trì</h5>
-                                <p>Theo dõi tình trạng thiết bị và lập lịch bảo trì phòng ngừa</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Đo Lường: Quyết Định Kỹ Thuật</h4>
-                        <ul>
-                            <li><strong>Tài Liệu Yêu Cầu</strong>: Tạo yêu cầu chức năng và phi chức năng chi tiết cho nhóm phát triển tham khảo</li>
-                            <li><strong>Lập Kế Hoạch Mở Rộng</strong>: Thiết kế kiến trúc để xử lý mở rộng từ một khoa đến triển khai toàn trường</li>
-                            <li><strong>Kiểm Thử & Xác Thực</strong>: Triển khai và kiểm thử các tính năng cốt lõi để đảm bảo đồng bộ với yêu cầu</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Học Hỏi: Bài Học Chính</h4>
-                        <ul>
-                            <li><strong>Yêu cầu rõ ràng là quan trọng</strong>: Phân tích chi tiết từ đầu ngăn chặn scope creep và làm lại</li>
-                            <li><strong>Hệ thống đa người dùng cần thiết kế phân quyền cẩn thận</strong>: Cân bằng quyền truy cập cho các vai trò khác nhau phức tạp hơn dự kiến</li>
-                            <li><strong>Tài liệu tạo điều kiện cộng tác</strong>: Đặc tả rõ ràng cho phép chuyển giao trơn tru giữa giai đoạn phân tích và triển khai</li>
-                        </ul>
+                        <h4>Phân Tích & Triển Khai</h4>
+                        <p>Thu thập yêu cầu từ nhân viên, sinh viên, quản trị viên. Tạo BRD, use case diagrams, 3 user personas. Xây dựng 6 tính năng: catalog, đặt chỗ, phân quyền RBAC, theo dõi cho mượn, dashboard, bảo trì.</p>
                     </div>
                 </div>
-
-                <button class="expand-btn" data-target="project-2-content" aria-label="Xem thêm chi tiết dự án">
-                    <span>Xem Thêm</span>
-                    <span class="arrow">▼</span>
-                </button>
-
-                <div class="project-links">
-                    <a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Có Sẵn Theo Yêu Cầu</a>
-                </div>
+                <button class="expand-btn" data-target="project-2-content"><span>Xem Thêm</span><span class="arrow">▼</span></button>
+                <div class="project-links"><a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Theo Yêu Cầu</a></div>
             </div>
 
-            <!-- RENTMATE Project -->
+            <!-- RENTMATE -->
             <div class="project-card reveal">
                 <div class="project-header">
-                    <h3 class="project-title">🏠 RENTMATE — Nền Tảng Cho Thuê Bất Động Sản Full-Stack</h3>
+                    <div class="project-number">03</div>
+                    <h3 class="project-title">
+                        <span class="icon icon-lg"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>
+                        RENTMATE — Nền Tảng Cho Thuê Nhà
+                    </h3>
                     <div class="project-meta">
-                        <p><strong>Loại:</strong> Dự Án Học Thuật (Solo)</p>
-                        <p><strong>Vai trò:</strong> Lập Trình Viên Full-Stack & Nhà Thiết Kế Sản Phẩm</p>
+                        <p><strong>Loại:</strong> Dự Án Cá Nhân  ·  <strong>Stack:</strong> Spring Boot · React · PostgreSQL</p>
                     </div>
                     <div class="project-tags">
-                        <span class="tag">Thiết Kế Sản Phẩm</span>
-                        <span class="tag">Nghiên Cứu Người Dùng</span>
-                        <span class="tag">Triển Khai Kỹ Thuật</span>
-                        <span class="tag">Full-Stack</span>
+                        <span class="tag">SRS</span><span class="tag">MoSCoW</span><span class="tag">Personas</span><span class="tag">Full-Stack</span><span class="tag">UAT</span>
                     </div>
                 </div>
-                
                 <div class="project-content collapsed" id="project-3-content">
                     <div class="project-section">
-                        <h4>Khám Phá: Cơ Hội Thị Trường</h4>
-                        <p>
-                            Xác định các điểm kém hiệu quả trong thị trường cho thuê bất động sản cho sinh viên và chủ nhà. 
-                            Các vấn đề chính: thiếu minh bạch trong giá cả, giao tiếp khó khăn giữa các bên, 
-                            và xử lý tài liệu thủ công.
-                        </p>
-                        <blockquote class="insight">
-                            Cơ Hội: Xây dựng marketplace hai chiều giúp đơn giản hóa toàn bộ quy trình cho thuê
-                        </blockquote>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Xây Dựng: Phát Triển Sản Phẩm</h4>
-                        <ul>
-                            <li><strong>User Personas</strong>: Xác định hai người dùng chính — Sinh viên (người thuê) và Chủ nhà (chủ sở hữu bất động sản)</li>
-                            <li><strong>Lập Bản Đồ Tính Năng</strong>: Tạo bản đồ hành trình người dùng cho cả hai persona để xác định tính năng bắt buộc:
-                                <ul>
-                                    <li>Cho Sinh viên: Tìm kiếm bất động sản với bộ lọc, upload tài liệu, theo dõi thanh toán</li>
-                                    <li>Cho Chủ nhà: Đăng bất động sản, quản lý người thuê, xử lý yêu cầu thuê</li>
-                                </ul>
-                            </li>
-                            <li><strong>Kiến Trúc Kỹ Thuật</strong>: Thiết kế và triển khai kiến trúc có thể mở rộng một cách độc lập:
-                                <ul>
-                                    <li>Backend: Spring Boot + PostgreSQL cho lưu trữ dữ liệu</li>
-                                    <li>Frontend: React cho UI động</li>
-                                    <li>Bảo mật: Spring Security với BCrypt cho xác thực</li>
-                                    <li>Tài liệu API: Swagger cho đặc tả API rõ ràng</li>
-                                </ul>
-                            </li>
-                            <li><strong>Phát Triển Solo</strong>: Quản lý toàn bộ vòng đời phát triển từ ý tưởng đến triển khai, xử lý cả quyết định sản phẩm lẫn triển khai kỹ thuật</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Ra Mắt: Tính Năng Chính Đã Triển Khai</h4>
-                        <div class="features-grid">
-                            <div class="feature">
-                                <h5>Hệ Thống Xác Thực</h5>
-                                <p>Đăng ký & đăng nhập bảo mật cho người dùng và chủ nhà</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Quản Lý Bất Động Sản</h5>
-                                <p>Thao tác CRUD đầy đủ với hỗ trợ upload hình ảnh</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Tìm Kiếm & Lọc</h5>
-                                <p>Lọc nâng cao theo vị trí, giá cả, tiện nghi</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Xử Lý Tài Liệu</h5>
-                                <p>Hệ thống upload và quản lý tài liệu số</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Theo Dõi Thanh Toán</h5>
-                                <p>Theo dõi thanh toán tiền thuê và lịch sử yêu cầu</p>
-                            </div>
-                            <div class="feature">
-                                <h5>Hệ Thống Nhắn Tin</h5>
-                                <p>Chat thời gian thực giữa người thuê và chủ nhà</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Đo Lường: Quyết Định Kỹ Thuật & Sản Phẩm</h4>
-                        <ul>
-                            <li><strong>Thiết Kế Database</strong>: Schema chuẩn hóa để đảm bảo tính toàn vẹn dữ liệu và khả năng mở rộng</li>
-                            <li><strong>Phương Pháp API-First</strong>: Thiết kế RESTful API cho phép phát triển ứng dụng mobile trong tương lai</li>
-                            <li><strong>Kiểm Thử Người Dùng</strong>: Thực hiện kiểm thử khả năng sử dụng với 10 người dùng, dẫn đến cải thiện UI</li>
-                            <li><strong>Hiệu Năng</strong>: Tối ưu hóa truy vấn và triển khai caching để tải nhanh hơn</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Học Hỏi: Insight về Sản Phẩm</h4>
-                        <ul>
-                            <li><strong>Marketplace hai chiều rất phức tạp</strong>: Cân bằng tính năng cho cả hai loại người dùng đòi hỏi ưu tiên cẩn thận — một bài học quý giá trong việc đưa ra quyết định trade-off sản phẩm một cách độc lập</li>
-                            <li><strong>Bắt đầu đơn giản, cải tiến dần</strong>: Ra mắt với các tính năng cốt lõi trước, lên kế hoạch cho tính năng nâng cao (đánh giá, phân tích) cho v2.0</li>
-                            <li><strong>Trade-off kỹ thuật</strong>: Học cách cân bằng giải pháp lý tưởng với những gì thực tế dựa trên thời gian/nguồn lực khi làm việc solo</li>
-                            <li><strong>Sở hữu end-to-end</strong>: Quản lý cả khía cạnh sản phẩm lẫn kỹ thuật giúp tôi hiểu sâu hơn về vòng đời phát triển đầy đủ</li>
-                            <li><strong>Phản hồi người dùng là vàng</strong>: Kiểm thử sớm tiết lộ các vấn đề UX quan trọng mà không thể rõ ràng trong quá trình phát triển solo</li>
-                        </ul>
+                        <h4>Phát Triển & Triển Khai</h4>
+                        <p>SRS với MoSCoW. Full-stack: Spring Boot + React + PostgreSQL. UAT 10 users. 6 tính năng: xác thực, quản lý bất động sản, tìm kiếm, tài liệu, thanh toán, nhắn tin.</p>
                     </div>
                 </div>
-
-                <button class="expand-btn" data-target="project-3-content" aria-label="Xem thêm chi tiết dự án">
-                    <span>Xem Thêm</span>
-                    <span class="arrow">▼</span>
-                </button>
-
-                <div class="project-links">
-                    <a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Có Sẵn Theo Yêu Cầu</a>
-                </div>
+                <button class="expand-btn" data-target="project-3-content"><span>Xem Thêm</span><span class="arrow">▼</span></button>
+                <div class="project-links"><a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Theo Yêu Cầu</a></div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <hr class="section-sep">
+
+    <!-- Skills -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title reveal">Kỹ Năng & Năng Lực</h2>
-            <p class="section-subtitle reveal">Những gì tôi mang lại cho vai trò Product Management & Business Analysis</p>
-            
-            <div class="skills-grid stagger-children">
+            <div class="section-header reveal">
+                <div class="section-label">
+                    <span class="icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    Kỹ năng
+                </div>
+                <h2 class="section-title">Kỹ Năng & Năng Lực</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-grid stagger-children reveal">
                 <div class="skill-category">
-                    <h3>🎯 Quản Lý Sản Phẩm Cốt Lõi</h3>
-                    <ul>
-                        <li>Chiến Lược & Lộ Trình Sản Phẩm</li>
-                        <li>Nghiên Cứu & Phỏng Vấn Người Dùng</li>
-                        <li>Ưu Tiên Tính Năng (RICE, MoSCoW)</li>
-                        <li>Lập Bản Đồ Hành Trình Người Dùng</li>
-                        <li>A/B Testing & Thử Nghiệm</li>
-                        <li>Số Liệu & Phân Tích Sản Phẩm</li>
-                        <li>Chiến Lược Go-to-Market</li>
-                        <li>Quản Lý Stakeholder</li>
-                    </ul>
+                    <h3>
+                        <span class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+                        Phân Tích Nghiệp Vụ
+                    </h3>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Yêu Cầu</div>
+                        <div class="skill-group-items">Thu thập, Phân tích, Tài liệu hóa, Truy xuất nguồn gốc</div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Artifacts</div>
+                        <div class="skill-group-items">BRD, SRS, User Stories, Use Cases, Acceptance Criteria</div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Mô Hình</div>
+                        <div class="skill-group-items">UML (Use Case, Activity, Sequence), Workflows, Process Maps</div>
+                    </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>⚡ Kỹ Năng Kỹ Thuật</h3>
-                    <ul>
-                        <li>Nền Tảng Khoa Học Máy Tính</li>
-                        <li>Phát Triển Full-Stack (React, Spring Boot)</li>
-                        <li>Thiết Kế Database (PostgreSQL)</li>
-                        <li>Thiết Kế API & RESTful Services</li>
-                        <li>Kiến Trúc Phần Mềm</li>
-                        <li>Quản Lý Phiên Bản (Git/GitHub)</li>
-                        <li>Phương Pháp Agile/Scrum</li>
-                        <li>Tài Liệu Kỹ Thuật</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>📊 Dữ Liệu & Phân Tích</h3>
-                    <ul>
-                        <li>Ra Quyết Định Dựa Trên Dữ Liệu</li>
-                        <li>SQL cho Phân Tích Dữ Liệu</li>
-                        <li>Phân Tích Hành Vi Người Dùng</li>
-                        <li>Nghiên Cứu Định Lượng & Định Tính</li>
-                        <li>Định Nghĩa Số Liệu Thành Công</li>
-                        <li>Phân Tích Cạnh Tranh</li>
-                        <li>Nghiên Cứu Thị Trường</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>🤝 Cộng Tác & Giao Tiếp</h3>
-                    <ul>
-                        <li>Lãnh Đạo Nhóm Liên Chức Năng</li>
-                        <li>Giao Tiếp Kỹ Thuật</li>
-                        <li>Viết User Story</li>
-                        <li>Kỹ Năng Thuyết Trình</li>
-                        <li>Tiếng Anh (Chuyên Nghiệp)</li>
-                        <li>Lập Tài Liệu & Viết</li>
-                        <li>Giải Quyết Xung Đột</li>
-                        <li>Đồng Bộ Stakeholder</li>
-                    </ul>
+                    <h3>
+                        <span class="icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+                        Công Cụ & Kỹ Thuật
+                    </h3>
+                    <div class="skill-group">
+                        <div class="skill-group-title">BA Tools</div>
+                        <div class="skill-group-items">Jira, Confluence, Microsoft Visio, Lucidchart</div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Phân Tích Dữ Liệu</div>
+                        <div class="skill-group-items">SQL (PostgreSQL, MySQL), Excel, Data Modeling</div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">Dev & Agile</div>
+                        <div class="skill-group-items">Python, Java, C#, TypeScript · Scrum, Sprint Planning, Backlog Grooming</div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title">API & Hệ Thống</div>
+                        <div class="skill-group-items">RESTful API, System Integration, Swagger, Git, SDLC</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="mindsets">
-                <h3>Tư Duy Sản Phẩm</h3>
+            <div class="mindsets reveal">
+                <h3>Tư Duy</h3>
                 <div class="mindsets-grid stagger-children">
                     <div class="mindset-card">
-                        <h4>🔍 Giải Quyết Vấn Đề Trước Tiên</h4>
-                        <p>Tôi không si mê giải pháp — tôi si mê những vấn đề đáng giải quyết</p>
+                        <h4><span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span> Ưu Tiên Vấn Đề</h4>
+                        <p>Bắt đầu bằng việc hiểu yêu cầu, không nhảy vào giải pháp</p>
                     </div>
                     <div class="mindset-card">
-                        <h4>👤 Lấy Người Dùng Làm Trung Tâm</h4>
-                        <p>Mỗi quyết định bắt đầu từ "Người dùng cần gì?" chứ không phải "Chúng ta có thể xây dựng gì?"</p>
+                        <h4><span class="icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span> Người Dùng Là Trung Tâm</h4>
+                        <p>Mọi quyết định bắt đầu từ "Người dùng cần gì?"</p>
                     </div>
                     <div class="mindset-card">
-                        <h4>📈 Dựa Trên Dữ Liệu</h4>
-                        <p>Tôi tin tưởng dữ liệu, nhưng cũng biết khi nào nên tin trực giác và phản hồi người dùng</p>
+                        <h4><span class="icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span> Dựa Trên Dữ Liệu</h4>
+                        <p>Tin tưởng dữ liệu, nhưng biết khi nào nên tin trực giác</p>
                     </div>
                     <div class="mindset-card">
-                        <h4>🚀 Xu Hướng Hành Động</h4>
-                        <p>Tôi thích ra mắt và cải tiến hơn là chờ đợi hoàn hảo</p>
+                        <h4><span class="icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span> Xu Hướng Hành Động</h4>
+                        <p>Thích ship và iterate hơn chờ hoàn hảo</p>
                     </div>
                     <div class="mindset-card">
-                        <h4>💻 Đồng Cảm Kỹ Thuật</h4>
-                        <p>Tôi hiểu các ràng buộc kỹ thuật và làm việc với — chứ không phải chống lại — thực tế kỹ thuật</p>
+                        <h4><span class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span> Đồng Cảm Kỹ Thuật</h4>
+                        <p>Hiểu ràng buộc kỹ thuật, làm việc cùng thực tế</p>
                     </div>
                     <div class="mindset-card">
-                        <h4>🌱 Tư Duy Phát Triển</h4>
-                        <p>Tôi coi mỗi lần ra mắt sản phẩm là cơ hội học hỏi</p>
+                        <h4><span class="icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span> Tư Duy Phát Triển</h4>
+                        <p>Mỗi lần ra mắt là cơ hội học hỏi</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <hr class="section-sep">
+
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title reveal">Hãy Cùng Xây Dựng Điều Tuyệt Vời</h2>
+            <div class="section-header reveal">
+                <div class="section-label">
+                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                    Liên hệ
+                </div>
+                <h2 class="section-title">Hãy Cùng Xây Dựng Điều Tuyệt Vời</h2>
+                <div class="section-divider"></div>
+            </div>
             <p class="contact-description reveal">
-                Tôi rất muốn thảo luận về cách tôi có thể đóng góp cho nhóm của bạn. 
-                Dù là về dự án, tư duy sản phẩm, hay cơ hội hợp tác — tôi luôn sẵn lòng lắng nghe!
+                Tôi muốn thảo luận về cách đóng góp cho nhóm của bạn. Dù là dự án, tư duy phân tích, hay cơ hội hợp tác — tôi luôn sẵn lòng.
             </p>
             <div class="contact-info reveal">
                 <div class="contact-details">
-                    <p><strong>Email:</strong> nguyenquangphu0402@gmail.com</p>
-                    <p><strong>Điện thoại:</strong> 0964717953</p>
-                    <p><strong>Địa chỉ:</strong> Quận Gò Vấp, TP. Hồ Chí Minh, Việt Nam</p>
+                    <p><strong>Email</strong> nguyenquangphu0402@gmail.com</p>
+                    <p><strong>SĐT</strong> 0964717953</p>
+                    <p><strong>Địa chỉ</strong> Quận Gò Vấp, TP. Hồ Chí Minh</p>
+                    <p><strong>Ngôn ngữ</strong> Tiếng Anh (Professional), Tiếng Việt (Bản ngữ)</p>
                 </div>
             </div>
             <div class="contact-links reveal">
-                <a href="mailto:nguyenquangphu0402@gmail.com" class="contact-btn">
-                    ✉ Gửi Email
-                </a>
-                <a href="https://www.linkedin.com/in/nguyenquangphu2002/" class="contact-btn" target="_blank">
-                    🔗 LinkedIn
-                </a>
+                <a href="mailto:nguyenquangphu0402@gmail.com" class="contact-btn">Gửi Email →</a>
+                <a href="https://www.linkedin.com/in/nguyenquangphu2002/" class="contact-btn" target="_blank">LinkedIn →</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Nguyễn Quang Phú. Được xây dựng với đam mê về sản phẩm và công nghệ.</p>
-            <p class="footer-note">Portfolio này thể hiện tư duy sản phẩm, kỹ năng kỹ thuật và đam mê xây dựng sản phẩm tuyệt vời của tôi.</p>
+            <p>&copy; 2026 Nguyễn Quang Phú. Xây dựng với đam mê về sản phẩm và công nghệ.</p>
+            <p class="footer-note">Đã xuất bản: IntelliFix extension trên VS Code Marketplace</p>
         </div>
     </footer>
 
