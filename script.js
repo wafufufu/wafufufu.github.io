@@ -1,126 +1,266 @@
-// Navbar scroll effect
-const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
+// ============================================
+// PORTFOLIO - PREMIUM INTERACTIONS
+// ============================================
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+(function () {
+    'use strict';
+
+    // ---- Page Loader ----
+    const loader = document.getElementById('page-loader');
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+            setTimeout(() => loader.remove(), 500);
+        }, 400);
+    });
+
+    // ---- Scroll Progress Bar ----
+    const scrollProgress = document.getElementById('scroll-progress');
+    function updateScrollProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        scrollProgress.style.width = progress + '%';
     }
-    
-    lastScroll = currentScroll;
-});
 
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        
-        if (target) {
-            const offsetTop = target.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
+    // ---- Navbar Scroll Effect ----
+    const navbar = document.getElementById('navbar');
+    function updateNavbar() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }
+
+    // ---- Back to Top Button ----
+    const backToTop = document.getElementById('back-to-top');
+    function updateBackToTop() {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Combined scroll handler (throttled)
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                updateScrollProgress();
+                updateNavbar();
+                updateBackToTop();
+                ticking = false;
             });
+            ticking = true;
         }
     });
-});
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+    // ---- Mobile Menu Toggle ----
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-up');
-            observer.unobserve(entry.target);
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+        });
+    });
+
+    // Close mobile menu on outside click
+    document.addEventListener('click', (e) => {
+        if (!navbar.contains(e.target) && navLinks.classList.contains('open')) {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('open');
         }
     });
-}, observerOptions);
 
-// Observe all project cards and skill categories
-document.addEventListener('DOMContentLoaded', () => {
-    const elementsToAnimate = document.querySelectorAll('.project-card, .skill-category, .mindset-card, .why-card');
-    elementsToAnimate.forEach(el => observer.observe(el));
-});
-
-// Add hover effect to project cards
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.borderLeft = '5px solid #8B4513';
+    // ---- Smooth Scroll for Anchor Links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
     });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.borderLeft = 'none';
+
+    // ---- Expand / Collapse Project Cards ----
+    document.querySelectorAll('.expand-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-target');
+            const content = document.getElementById(targetId);
+            const isExpanded = content.classList.contains('expanded');
+
+            if (isExpanded) {
+                content.classList.remove('expanded');
+                content.classList.add('collapsed');
+                btn.classList.remove('expanded');
+                btn.querySelector('span:first-child').textContent = 'Read More';
+            } else {
+                content.classList.remove('collapsed');
+                content.classList.add('expanded');
+                btn.classList.add('expanded');
+                btn.querySelector('span:first-child').textContent = 'Show Less';
+            }
+        });
     });
-});
 
-// Track scroll depth for analytics (optional)
-let maxScrollDepth = 0;
+    // ---- Scroll Reveal Animations ----
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Once visible, stop observing for performance
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+    });
 
-window.addEventListener('scroll', () => {
-    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollDepth = Math.round((window.pageYOffset / scrollHeight) * 100);
-    
-    if (scrollDepth > maxScrollDepth) {
-        maxScrollDepth = scrollDepth;
-        
-        // Log scroll milestones
-        if (maxScrollDepth === 25 || maxScrollDepth === 50 || maxScrollDepth === 75 || maxScrollDepth === 100) {
-            console.log(`User scrolled to ${maxScrollDepth}% of the page`);
-            // You can send this to analytics service
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger-children').forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // ---- Particle Canvas (Subtle dots) ----
+    const canvas = document.getElementById('particles-canvas');
+    if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animId;
+
+        function resizeCanvas() {
+            const hero = document.getElementById('hero');
+            canvas.width = hero.offsetWidth;
+            canvas.height = hero.offsetHeight;
         }
+
+        function createParticles() {
+            particles = [];
+            const count = Math.min(Math.floor((canvas.width * canvas.height) / 12000), 80);
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.3,
+                    vy: (Math.random() - 0.5) * 0.3,
+                    r: Math.random() * 2 + 0.5,
+                    alpha: Math.random() * 0.5 + 0.1
+                });
+            }
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw dots
+            particles.forEach(p => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 255, 255, ${p.alpha * 0.6})`;
+                ctx.fill();
+
+                // Move
+                p.x += p.vx;
+                p.y += p.vy;
+
+                // Wrap around
+                if (p.x < 0) p.x = canvas.width;
+                if (p.x > canvas.width) p.x = 0;
+                if (p.y < 0) p.y = canvas.height;
+                if (p.y > canvas.height) p.y = 0;
+            });
+
+            // Draw connections
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 120) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(255, 255, 255, ${0.05 * (1 - dist / 120)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            animId = requestAnimationFrame(drawParticles);
+        }
+
+        resizeCanvas();
+        createParticles();
+        drawParticles();
+
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            createParticles();
+        });
+
+        // Stop particles when hero is not visible for performance
+        const heroObserver = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                if (!animId) drawParticles();
+            } else {
+                cancelAnimationFrame(animId);
+                animId = null;
+            }
+        });
+        heroObserver.observe(document.getElementById('hero'));
     }
-});
 
-// Update contact email (user should replace this)
-const emailLinks = document.querySelectorAll('a[href^="mailto:your.email"]');
-emailLinks.forEach(link => {
-    // User should update this with their actual email
-    link.addEventListener('click', function(e) {
-        if (this.href.includes('your.email@example.com')) {
-            e.preventDefault();
-            alert('Please update the email address in index.html with your actual email!');
-        }
+    // ---- Active Nav Link Highlight ----
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navItems.forEach(a => {
+                    a.style.color = '';
+                    if (a.getAttribute('href') === `#${id}`) {
+                        a.style.color = '#ffffff';
+                    }
+                });
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '-80px 0px -50% 0px'
     });
-});
 
-// Update LinkedIn and other social links
-const socialLinks = document.querySelectorAll('a[href*="linkedin.com/in/yourprofile"]');
-socialLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        if (this.href.includes('yourprofile')) {
-            e.preventDefault();
-            alert('Please update the LinkedIn URL in index.html with your actual profile!');
-        }
-    });
-});
+    sections.forEach(s => sectionObserver.observe(s));
 
-// Dynamic year in footer
-const currentYear = new Date().getFullYear();
-const footerYear = document.querySelector('.footer p');
-if (footerYear) {
-    footerYear.textContent = footerYear.textContent.replace('2026', currentYear);
-}
+    // ---- Dynamic Year ----
+    const currentYear = new Date().getFullYear();
+    const footerYear = document.querySelector('.footer p');
+    if (footerYear) {
+        footerYear.textContent = footerYear.textContent.replace('2026', currentYear);
+    }
 
-// Add loading animation
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-        document.body.style.transition = 'opacity 0.5s ease-in';
-        document.body.style.opacity = '1';
-    }, 100);
-});
+    // ---- Console Banner ----
+    console.log(
+        '%c⟨PN/⟩ Portfolio',
+        'font-size:20px;font-weight:800;color:#ffffff;'
+    );
+    console.log('%cThanks for checking out my code! 🚀', 'font-size:14px;color:#a3a3a3;');
 
-// Console message for recruiters
-console.log('%c👋 Hey there!', 'font-size: 20px; font-weight: bold; color: #8B4513;');
-console.log('%cThanks for checking out my portfolio code!', 'font-size: 14px; color: #5C4033;');
-console.log('%cI built this to showcase my product thinking and technical skills.', 'font-size: 14px; color: #5C4033;');
-console.log('%cLet\'s build something amazing together! 🚀', 'font-size: 14px; color: #CD853F;');
+})();
