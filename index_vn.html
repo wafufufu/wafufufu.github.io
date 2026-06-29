@@ -10,166 +10,247 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-loader" id="page-loader"><div class="loader-spinner"></div></div>
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
     <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Back to Top -->
     <button class="back-to-top" id="back-to-top" aria-label="Về đầu trang">↑</button>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="#" class="logo">⟨PN/⟩</a>
+            <a href="#" class="logo">Portfolio</a>
             <button class="menu-toggle" id="menu-toggle" aria-label="Mở menu">
-                <span></span><span></span><span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about">Giới Thiệu</a></li>
-                <li><a href="#experience">Kinh Nghiệm</a></li>
-                <li><a href="#projects">Dự Án</a></li>
-                <li><a href="#skills">Kỹ Năng</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
-                <li><a href="index.html" class="lang-switch">EN English</a></li>
+                <li>
+                    <a href="#experience" class="nav-link">
+                        <span class="nav-link-text">
+                            <span>Kinh Nghiệm</span>
+                            <span>Kinh Nghiệm</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#works" class="nav-link">
+                        <span class="nav-link-text">
+                            <span>Dự Án</span>
+                            <span>Dự Án</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#approach" class="nav-link">
+                        <span class="nav-link-text">
+                            <span>Phương Pháp</span>
+                            <span>Phương Pháp</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">
+                        <span class="nav-link-text">
+                            <span>Giới Thiệu</span>
+                            <span>Giới Thiệu</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <span class="nav-link-text">
+                            <span>Liên Hệ</span>
+                            <span>Liên Hệ</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="lang-switch-link">EN</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero" id="hero">
         <canvas id="particles-canvas"></canvas>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="dot"></span>
-                    Sẵn sàng cho cơ hội mới
-                </div>
-                <h1 class="hero-title">Xin chào, tôi là <span class="highlight">Phú</span></h1>
-                <h2 class="hero-subtitle">Business Analyst & Cử Nhân Công Nghệ Thông Tin</h2>
-                <p class="hero-description">
-                    Kinh nghiệm thực tế thu thập và phân tích yêu cầu từ 70+ stakeholders. 
-                    Chuyển đổi nhu cầu kinh doanh thành 40+ user stories, BRDs và acceptance criteria qua 8 sprint agile. 
-                    Nền tảng kỹ thuật giúp kết nối hiệu quả giữa stakeholders và đội phát triển.
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">Xem Dự Án ↓</a>
-                    <a href="#contact" class="btn btn-secondary">Liên Hệ →</a>
-                </div>
-                <div class="hero-education">
-                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
-                    <span><strong>Cử nhân Công Nghệ Thông Tin</strong> — RMIT University HCMC · Tốt nghiệp Tháng 3/2026</span>
-                </div>
-            </div>
+        <div class="hero-content">
+            <h1 class="hero-name">PHU NGUYEN</h1>
+            <h2 class="hero-role">Business Analyst & Cử Nhân Công Nghệ Thông Tin</h2>
+            <p class="hero-tagline">
+                Xây dựng giải pháp với yêu cầu rõ ràng và hệ thống đáng tin cậy. Là cầu nối vững chắc giữa bài toán kinh doanh và thực tế công nghệ.
+            </p>
         </div>
+        <a href="#experience" class="scroll-indicator">
+            <span>Cuộn để khám phá</span>
+            <span class="scroll-line"></span>
+        </a>
     </section>
-
-    <hr class="section-sep">
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">
-                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
-                    Giới thiệu
-                </div>
-                <h2 class="section-title">Tại Sao Chọn Tôi?</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="about-content reveal">
-                <div class="about-text">
-                    <p>
-                        Là <strong>cử nhân Công Nghệ Thông Tin từ RMIT University</strong>, tôi mang đến sự kết hợp giữa chiều sâu kỹ thuật 
-                        và tư duy lấy người dùng làm trung tâm. Tôi đã trải nghiệm toàn bộ hành trình — từ thu thập yêu cầu 
-                        đến triển khai và đo lường tác động. Nền tảng kỹ thuật giúp tôi giao tiếp hiệu quả giữa stakeholders và đội phát triển.
-                    </p>
-                    <p>Những gì tôi mang lại:</p>
-                    <ul class="about-list stagger-children">
-                        <li><strong>Tư Duy Ưu Tiên Yêu Cầu</strong> — Bắt đầu bằng việc hiểu vấn đề qua thu thập có cấu trúc, không nhảy vào giải pháp</li>
-                        <li><strong>Cầu Nối Kỹ Thuật + Kinh Doanh</strong> — Nói được cả ngôn ngữ kỹ sư lẫn stakeholder, chuyển đổi nhu cầu thành đặc tả</li>
-                        <li><strong>Quyết Định Dựa Trên Dữ Liệu</strong> — Sử dụng nghiên cứu, metrics và A/B testing để xác thực yêu cầu</li>
-                        <li><strong>Người Xây Dựng Thực Tế</strong> — Đã ra mắt sản phẩm thực và hiểu SDLC từ cả góc nhìn BA lẫn developer</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <hr class="section-sep">
-
-    <!-- Experience -->
+    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">
-                    <span class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span>
-                    Kinh nghiệm
-                </div>
-                <h2 class="section-title">Kinh Nghiệm Làm Việc</h2>
-                <div class="section-divider"></div>
+            <div class="projects-header reveal">
+                <div class="section-label">Kinh Nghiệm</div>
+                <h2 class="section-heading">Kinh Nghiệm Thực Chiến,<br><em>xây dựng từ thực tế</em></h2>
+                <p class="section-description">Kinh nghiệm thực tế trong phân tích yêu cầu, tài liệu hóa nghiệp vụ và phối hợp triển khai tại các dự án ngân hàng doanh nghiệp và công nghệ giáo dục.</p>
             </div>
 
             <div class="experience-timeline reveal">
+                <!-- HDBank -->
                 <div class="exp-item">
-                    <div class="exp-date">Tháng 3/2025 – Tháng 10/2025 · 8 tháng</div>
-                    <div class="exp-role">Business Analyst & Developer</div>
-                    <div class="exp-company">IntelliFix — Extension VS Code Tích Hợp AI · SSET</div>
-                    <ul class="exp-bullets">
-                        <li><strong>Thu Thập Yêu Cầu & Quản Lý Stakeholders:</strong> Thực hiện thu thập yêu cầu từ 70+ stakeholders (20+ phỏng vấn chuyên sâu, 50+ khảo sát có cấu trúc) tại 3 trường đại học. Xác định vấn đề: 73% mất 30+ phút debug lỗi, 60% cân nhắc bỏ học lập trình</li>
-                        <li><strong>Phân Tích Nghiệp Vụ & Tài Liệu Hóa:</strong> Phân tích thị trường cạnh tranh và tài liệu hóa yêu cầu chức năng/phi chức năng theo BRD. Tạo 40+ user stories với acceptance criteria, use cases và UML diagrams cho đội 5 người (2 FE, 2 BE, 1 QA)</li>
-                        <li><strong>Ưu Tiên Yêu Cầu & Truy Xuất:</strong> Áp dụng RICE framework ưu tiên 50+ backlog items. Duy trì requirements traceability matrix qua 8 sprint agile 2 tuần</li>
-                        <li><strong>UAT & Validation:</strong> Điều phối UAT với 50+ beta users qua 3 vòng test, thu thập 200+ feedback. Giảm onboarding từ 5 xuống 3 bước (giảm 50% tỷ lệ bỏ dở)</li>
-                        <li><strong>Phân Tích Tác Động:</strong> Theo dõi KPIs: giảm 60% thời gian debug, tỷ lệ kích hoạt 40%, đánh giá 4.2/5. Tài liệu hóa 3 change requests sau launch</li>
-                    </ul>
+                    <div class="exp-meta">
+                        <div class="exp-date">Tháng 1/2026 – Hiện tại<br>6 tháng</div>
+                        <div class="company-badge">FPT Information System</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>HDBank Internet Banking</h4>
+                        <div class="exp-role">Business Analyst (Onsite)</div>
+                        
+                        <div class="exp-metrics-grid">
+                            <div class="exp-metric"><div class="exp-metric-value">SEMS</div><div class="exp-metric-label">Back-office Flows</div></div>
+                            <div class="exp-metric"><div class="exp-metric-value">BRD</div><div class="exp-metric-label">BPMN & Data</div></div>
+                            <div class="exp-metric"><div class="exp-metric-value">Figma</div><div class="exp-metric-label">Mockups</div></div>
+                        </div>
+
+                        <ul class="exp-bullets">
+                            <li><strong>Phân tích nghiệp vụ SEMS/IBMB:</strong> Đọc và bóc tách BRD/FSD cho các luồng tạo hợp đồng KHDN, quản lý người dùng, phân quyền tài khoản, phương thức xác thực và chuyển khoản đơn cấp/đa cấp.</li>
+                            <li><strong>BRD & BPMN cho thông báo tin tức:</strong> Xây dựng nội dung BRD, BPMN và bảng mô tả dữ liệu cho chức năng Gửi tin tức theo Version/Build Number, bao gồm HO duyệt tin, Outapp/Inapp notification trên MB và hiển thị tin tại tab Tin tức trên IB/MB.</li>
+                            <li><strong>Mockup & trải nghiệm người dùng:</strong> Thiết kế sketch/mockup Figma cho tính năng gửi thông báo người dùng, đảm bảo luồng hiển thị thống nhất giữa Internet Banking và Mobile Banking.</li>
+                            <li><strong>Functional testing & issue analysis:</strong> Chạy thử các luồng nghiệp vụ trên SEMS/IBMB, ghi nhận lỗi hoặc điểm chưa rõ, phân tích nguyên nhân theo rule nghiệp vụ và phối hợp Dev/QA để làm rõ trước UAT.</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- ACB Green -->
                 <div class="exp-item">
-                    <div class="exp-date">Dự Án Học Thuật</div>
-                    <div class="exp-role">Business Analyst & System Developer</div>
-                    <div class="exp-company">Hệ Thống Quản Lý Mượn Thiết Bị Trường Đại Học</div>
-                    <ul class="exp-bullets">
-                        <li><strong>Phân Tích Yêu Cầu:</strong> Thu thập yêu cầu từ nhân viên, sinh viên và quản trị viên. Tạo BRD với use case diagrams, activity diagrams, và 3 user personas với phân quyền</li>
-                        <li><strong>Triển Khai:</strong> Chuyển đổi yêu cầu thành đặc tả kỹ thuật, xây dựng 6 tính năng bao gồm catalog thiết bị, đặt chỗ, và dashboard báo cáo</li>
-                    </ul>
+                    <div class="exp-meta">
+                        <div class="exp-date">Tháng 1/2026 – Hiện tại<br>6 tháng</div>
+                        <div class="company-badge">FPT Information System</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>ACB Green Xác thực Doanh nghiệp</h4>
+                        <div class="exp-role">Business Analyst (Onsite)</div>
+                        
+                        <div class="exp-metrics-grid">
+                            <div class="exp-metric"><div class="exp-metric-value">BRD</div><div class="exp-metric-label">Yêu Cầu Nghiệp Vụ</div></div>
+                            <div class="exp-metric"><div class="exp-metric-value">BPMN</div><div class="exp-metric-label">Luồng Nghiệp Vụ</div></div>
+                            <div class="exp-metric"><div class="exp-metric-value">Test</div><div class="exp-metric-label">Kịch Bản Xác Thực</div></div>
+                        </div>
+
+                        <ul class="exp-bullets">
+                            <li><strong>Xác Thực Sinh Trắc Học KHDN:</strong> Phân tích tài liệu nghiệp vụ và chuyển đổi yêu cầu xác thực sinh trắc học KHDN thành BRD, user story/acceptance criteria và luồng BPMN phục vụ triển khai.</li>
+                            <li><strong>Tuân Thủ Quy Định Khắt Khe (NHNN):</strong> Đối chiếu luồng xác thực với yêu cầu Quyết định 2345/QĐ-NHNN và phối hợp với các bên liên quan để làm rõ rule nghiệp vụ, điều kiện áp dụng và các điểm kiểm soát rủi ro.</li>
+                            <li><strong>Tổ chức Workshop & Cầu Nối:</strong> Tham gia các buổi làm rõ yêu cầu với nghiệp vụ/ngân hàng và handover lại cho đội phát triển, giúp thống nhất phạm vi chức năng, rule xác thực và các trường hợp ngoại lệ.</li>
+                            <li><strong>Phân Tích Edge-cases:</strong> Phân tích các kịch bản ngoại lệ như xác thực thất bại nhiều lần, khóa/mở khóa trạng thái sinh trắc học và fallback flow để hỗ trợ kiểm thử và giảm rủi ro hiểu sai nghiệp vụ.</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- FPT InternHub -->
                 <div class="exp-item">
-                    <div class="exp-date">Dự Án Học Thuật · Cá Nhân</div>
-                    <div class="exp-role">Business Analyst & Full-Stack Developer</div>
-                    <div class="exp-company">RENTMATE — Nền Tảng Cho Thuê Nhà (Two-Sided Marketplace)</div>
-                    <ul class="exp-bullets">
-                        <li><strong>Yêu Cầu & Ưu Tiên:</strong> Phỏng vấn stakeholders, tạo personas và journey maps. Phát triển SRS với MoSCoW (Must: đăng tin, tìm kiếm, xác thực; Should: nhắn tin, tài liệu)</li>
-                        <li><strong>Triển Khai & UAT:</strong> Giải pháp full-stack (Spring Boot, React, PostgreSQL). UAT với 10 users, xác thực 6 tính năng cốt lõi</li>
-                    </ul>
+                    <div class="exp-meta">
+                        <div class="exp-date">Tháng 10/2025 – Tháng 1/2026<br>3 tháng</div>
+                        <div class="company-badge">FPT Information System</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>FPT InternHub v2</h4>
+                        <div class="exp-role">Thực tập sinh Business Analyst</div>
+
+                        <ul class="exp-bullets">
+                            <li><strong>Phân tích hệ thống:</strong> Phân tích và tài liệu hóa yêu cầu nghiệp vụ cho InternHub v2 — hệ thống LMS nội bộ kết hợp phân hệ Quản lý Dự án.</li>
+                            <li><strong>Tài liệu hóa Chuyên sâu:</strong> Soạn BRD, đặc tả chức năng, hướng dẫn sử dụng, user flow và mockup cho các phân hệ Đào tạo/Đánh giá, hỗ trợ quy trình quản lý 500+ thực tập sinh.</li>
+                            <li><strong>Tối ưu hóa Quy trình (Process Optimization):</strong> Phân tích quy trình onboarding thực tập sinh của phiên bản v1 và đề xuất cải tiến luồng nhằm giảm thao tác nhập liệu thủ công cho HR/training coordinator.</li>
+                            <li><strong>Chương trình Đào tạo BA:</strong> Hoàn thành chương trình đào tạo BA tại FPT, thực hành requirement engineering, UML/BPMN và Agile/Scrum trong môi trường dự án nội bộ.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IntelliFix -->
+                <div class="exp-item">
+                    <div class="exp-meta">
+                        <div class="exp-date">Tháng 3/2025 – Tháng 10/2025<br>8 tháng</div>
+                        <div class="company-badge">Trực thuộc: SSET</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>IntelliFix — VS Code Extension Tích Hợp AI</h4>
+                        <div class="exp-role">Business Analyst & Developer</div>
+                        
+                        <p style="color: var(--c-text-secondary); font-size: var(--fs-base); line-height: 1.8; margin-bottom: 8px;">
+                            Dự án khởi nguồn từ bài toán thực tế: biến những thông báo lỗi lập trình khô khan thành các bài học dễ hiểu cho sinh viên. IntelliFix cung cấp giải pháp giải thích và gợi ý sửa lỗi cú pháp ngay trong trình soạn thảo. Đã được xuất bản chính thức trên VS Code Marketplace.
+                        </p>
+
+                        <div class="exp-metrics-grid">
+                            <div class="exp-metric"><div class="exp-metric-value">60%</div><div class="exp-metric-label">Giảm Giờ Debug</div></div>
+                            <div class="exp-metric"><div class="exp-metric-value">70+</div><div class="exp-metric-label">Stakeholders</div></div>
+                            <div class="exp-metric"><div class="exp-metric-value">4.2</div><div class="exp-metric-label">Độ Hài Lòng / 5</div></div>
+                        </div>
+
+                        <ul class="exp-bullets">
+                            <li><strong>Quản Lý Stakeholders & Thu Thập Yêu Cầu:</strong> Chủ động tiếp cận 70+ sinh viên và giảng viên thông qua phỏng vấn sâu và khảo sát. Phát hiện Insight cốt lõi (73% sinh viên lãng phí hơn 30 phút chỉ để tìm hiểu một lỗi cú pháp cơ bản), từ đó phân rã thành 40+ User Stories chi tiết với Acceptance Criteria rõ ràng.</li>
+                            <li><strong>Phân Tích Đối Thủ & Triển Khai Agile:</strong> Thực hiện phân tích đối thủ cạnh tranh (GitHub Copilot, Error Lens) để tìm ra lợi thế khác biệt. Quản lý toàn bộ Product Backlog trong suốt 8 Sprints bằng framework RICE, điều phối hiệu quả một team cross-functional gồm 5 developers để ra mắt MVP đúng hạn.</li>
+                            <li><strong>Xác Thực Liên Tục (Iterative UAT):</strong> Tổ chức 3 vòng kiểm thử UAT với hơn 50 users thực tế. Thu thập và phân tích hơn 200 items feedback, từ đó quyết định đập đi xây lại luồng Onboarding (giảm từ 5 bước xuống 3 bước), giúp giảm 50% tỷ lệ người dùng bỏ dở ngay lần đầu sử dụng.</li>
+                            <li><strong>Product Launch & Growth:</strong> Phát hành sản phẩm thành công trên VS Code Marketplace. Liên tục theo dõi số liệu (Analytics) sau khi Launch để tung ra các bản cập nhật tối ưu tốc độ phản hồi AI và mở rộng hỗ trợ thêm các ngôn ngữ như Python, C++.</li>
+                        </ul>
+                        
+                        <div style="margin-top: 32px;">
+                            <a href="https://marketplace.visualstudio.com/items?itemName=DinhNgocMinh.intellifix" class="about-cta" target="_blank">Xem trên Marketplace →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr class="section-sep">
-
-    <!-- Projects -->
-    <section id="projects" class="projects">
+    <!-- Projects Section -->
+    <section id="works" class="projects">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">
-                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
-                    Dự án
-                </div>
-                <h2 class="section-title">Dự Án Nổi Bật</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Từ ý tưởng đến triển khai — xây dựng giải pháp giải quyết vấn đề thực tế</p>
+            <div class="projects-header reveal">
+                <div class="section-label">Dự Án Nổi Bật</div>
+                <h2 class="section-heading">Dự án được chọn lọc,<br><em>nghiên cứu kỹ lưỡng</em></h2>
+                <p class="section-description">Tuyển chọn các dự án tập trung vào yêu cầu rõ ràng, phân tích cẩn thận và giải pháp có khả năng mở rộng.</p>
             </div>
 
-            <!-- IntelliFix -->
+            <!-- IntelliFix Project -->
             <div class="project-card reveal">
-                <div class="project-header">
-                    <div class="project-number">01</div>
-                    <h3 class="project-title">
-                        <span class="icon icon-lg"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
-                        IntelliFix — Extension VS Code Tích Hợp AI
-                    </h3>
+                <div class="carousel-container" style="position: relative;">
+                    <button class="carousel-btn prev-btn" aria-label="Previous image" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.15); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; backdrop-filter: blur(8px); transition: background 0.3s, transform 0.2s;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="carousel-btn next-btn" aria-label="Next image" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.15); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; backdrop-filter: blur(8px); transition: background 0.3s, transform 0.2s;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                    <div class="project-image-wrapper intellifix-banner" style="display: flex; overflow-x: auto; overflow-y: hidden; gap: 16px; scroll-snap-type: x mandatory; aspect-ratio: auto; height: clamp(300px, 50vh, 500px); background: transparent; border: none; padding: 0; scrollbar-width: none; -ms-overflow-style: none;">
+                        <style>.intellifix-banner::-webkit-scrollbar { display: none; } .intellifix-banner img:hover { transform: none !important; } .carousel-btn:hover { background: rgba(255,255,255,0.1) !important; transform: translateY(-50%) scale(1.05) !important; }</style>
+                        <img src="https://raw.githubusercontent.com/mintdunno/Intellifix-images/main/media/inlineErrors.png" alt="Inline Errors" loading="lazy" style="height: 100%; width: auto; max-width: 90vw; object-fit: contain; scroll-snap-align: center; flex-shrink: 0; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: #0a0a0a; cursor: pointer;" onclick="if(this.src.includes('.gif')) this.src = this.src.split('?')[0] + '?t=' + new Date().getTime()" title="Nhấn để xem lại">
+                        <img src="https://raw.githubusercontent.com/mintdunno/Intellifix-images/main/media/reviewCode.gif" alt="Review Code" loading="lazy" style="height: 100%; width: auto; max-width: 90vw; object-fit: contain; scroll-snap-align: center; flex-shrink: 0; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: #0a0a0a; cursor: pointer;" onclick="if(this.src.includes('.gif')) this.src = this.src.split('?')[0] + '?t=' + new Date().getTime()" title="Nhấn để xem lại">
+                        <img src="https://raw.githubusercontent.com/mintdunno/Intellifix-images/main/media/fixCode.gif" alt="Fix Code" loading="lazy" style="height: 100%; width: auto; max-width: 90vw; object-fit: contain; scroll-snap-align: center; flex-shrink: 0; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: #0a0a0a; cursor: pointer;" onclick="if(this.src.includes('.gif')) this.src = this.src.split('?')[0] + '?t=' + new Date().getTime()" title="Nhấn để xem lại">
+                        <img src="https://raw.githubusercontent.com/mintdunno/Intellifix-images/main/media/learnFromErrror.gif" alt="Learn From Error" loading="lazy" style="height: 100%; width: auto; max-width: 90vw; object-fit: contain; scroll-snap-align: center; flex-shrink: 0; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: #0a0a0a; cursor: pointer;" onclick="if(this.src.includes('.gif')) this.src = this.src.split('?')[0] + '?t=' + new Date().getTime()" title="Nhấn để xem lại">
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-info-main">
+                        <h3 class="project-title">IntelliFix — Extension VS Code Tích Hợp AI</h3>
+                        <p class="project-description">Extension VS Code tích hợp AI cung cấp giải thích lỗi cú pháp và tự động sửa lỗi cho JavaScript, Python, C, và Java. Nó biến thông báo lỗi khó hiểu thành cơ hội học tập, mang đến hướng dẫn rõ ràng, thân thiện cho người mới bắt đầu ngay trong VS Code.</p>
+                    </div>
+                    <div class="project-cta">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=DinhNgocMinh.intellifix" target="_blank">Xem trên Marketplace →</a>
+                    </div>
+                </div>
+
+                <div class="project-detail">
                     <div class="project-meta">
-                        <p><strong>Tổ chức:</strong> Khoa Khoa học, Kỹ thuật & Công nghệ — SSET</p>
-                        <p><strong>Thời gian:</strong> Tháng 3/2025 – Tháng 10/2025 (8 tháng)</p>
-                        <p><strong>Quy mô nhóm:</strong> 5 thành viên  ·  <strong>Vai trò:</strong> Business Analyst & Developer</p>
-                        <p><strong>Loại:</strong> Dự Án Thực Tập  ·  <strong>Đã Xuất Bản trên VS Code Marketplace</strong></p>
+                        <div class="project-meta-item"><strong>Tổ chức</strong>Khoa Khoa học, Kỹ thuật & Công nghệ — SSET</div>
+                        <div class="project-meta-item"><strong>Thời gian</strong>Tháng 3/2025 – Tháng 10/2025 (8 tháng)</div>
+                        <div class="project-meta-item"><strong>Quy mô</strong>5 thành viên</div>
+                        <div class="project-meta-item"><strong>Vai trò</strong>Business Analyst & Developer</div>
+                        <div class="project-meta-item"><strong>Loại</strong>Dự Án Thực Tập · Đã Xuất Bản trên VS Code Marketplace</div>
                     </div>
                     <div class="project-tags">
                         <span class="tag">Thu Thập Yêu Cầu</span>
@@ -181,250 +262,309 @@
                         <span class="tag">A/B Testing</span>
                         <span class="tag">TypeScript</span>
                     </div>
-                </div>
 
-                <div class="project-content collapsed" id="project-1-content">
-                    <div class="project-section">
-                        <h4>Khám Phá: Nhận Diện Vấn Đề & Nghiên Cứu</h4>
-                        <p>Thu thập yêu cầu toàn diện từ 70+ stakeholders (20+ phỏng vấn, 50+ khảo sát) tại 3 trường đại học. Áp dụng phương pháp nghiên cứu có cấu trúc để xác định rào cản trong hành trình học lập trình.</p>
-                        <p><strong>Phát Hiện Chính:</strong></p>
-                        <ul>
-                            <li><strong>73% người dùng</strong> mất 30+ phút cho một thông báo lỗi</li>
-                            <li><strong>60% cân nhắc bỏ học</strong> lập trình do lỗi khó hiểu</li>
-                            <li><strong>Thời gian debug trung bình:</strong> 45 phút mỗi lỗi cho người mới</li>
-                        </ul>
-                        <blockquote class="insight">Insight: "Tôi ước thông báo lỗi có thể giải thích bằng thuật ngữ đơn giản và chỉ cho tôi cách sửa" — Sinh viên IT</blockquote>
-                        <p><strong>Phân Tích Đối Thủ:</strong> Đánh giá Error Lens, GitHub Copilot, VS Code IntelliSense. Xác định khoảng trống: không công cụ nào kết hợp giải thích AI với scaffolding giáo dục.</p>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Định Nghĩa: Chiến Lược & Lập Kế Hoạch</h4>
-                        <p><strong>Tầm Nhìn:</strong> Biến thông báo lỗi thành cơ hội học tập cho lập trình viên mới.</p>
-                        <p><strong>Ưu Tiên Tính Năng (RICE):</strong></p>
-                        <ol>
-                            <li><strong>One-Click Fix</strong> (RICE: 600)</li>
-                            <li><strong>AI Error Explanations</strong> (RICE: 400)</li>
-                            <li><strong>Learn from Error Module</strong> (RICE: 131)</li>
-                        </ol>
-                        <p><strong>Metrics Thành Công:</strong> Giảm 60% thời gian debug, kích hoạt 40%, 10+ lần/tuần sử dụng</p>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Xây Dựng: Thực Thi Agile</h4>
-                        <p>Dẫn dắt 8 sprint 2 tuần. Viết 40+ user stories. Quản lý backlog 50+ items. Duy trì requirements traceability matrix.</p>
-                        <ul>
-                            <li><strong>Sprint 1-2:</strong> Nền tảng & engine phát hiện lỗi (4 ngôn ngữ)</li>
-                            <li><strong>Sprint 3-4:</strong> Tích hợp AI — phản hồi <3 giây, độ chính xác 90%+</li>
-                            <li><strong>Sprint 5-6:</strong> One-click fix 80%+ accuracy, khả năng undo</li>
-                            <li><strong>Sprint 7-8:</strong> Launch — tài liệu, onboarding, beta testing</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-section">
-                        <h4>Đo Lường: Tác Động</h4>
-                        <div class="metrics-grid">
-                            <div class="metric"><div class="metric-value">60%</div><div class="metric-label">Giảm thời gian debug</div></div>
-                            <div class="metric"><div class="metric-value">40%</div><div class="metric-label">Tỷ lệ kích hoạt</div></div>
-                            <div class="metric"><div class="metric-value">4.2/5</div><div class="metric-label">Hài lòng người dùng</div></div>
-                            <div class="metric"><div class="metric-value">70+</div><div class="metric-label">Stakeholders</div></div>
+                    <div class="project-content collapsed" id="project-1-content">
+                        <div class="project-section">
+                            <h4>Khám Phá: Nhận Diện Vấn Đề & Nghiên Cứu</h4>
+                            <p>Thu thập yêu cầu toàn diện từ 70+ stakeholders (20+ phỏng vấn, 50+ khảo sát) tại 3 trường đại học. Áp dụng phương pháp nghiên cứu có cấu trúc để xác định rào cản trong hành trình học lập trình.</p>
+                            <p><strong>Phát Hiện Chính:</strong></p>
+                            <ul>
+                                <li><strong>73% người dùng</strong> mất 30+ phút cho một thông báo lỗi</li>
+                                <li><strong>60% cân nhắc bỏ học</strong> lập trình do lỗi khó hiểu</li>
+                                <li><strong>Thời gian debug trung bình:</strong> 45 phút mỗi lỗi cho người mới</li>
+                            </ul>
+                            <blockquote class="insight">Insight: "Tôi ước thông báo lỗi có thể giải thích bằng thuật ngữ đơn giản và chỉ cho tôi cách sửa" — Sinh viên IT</blockquote>
+                            <p><strong>Phân Tích Đối Thủ:</strong> Đánh giá Error Lens, GitHub Copilot, VS Code IntelliSense. Xác định khoảng trống: không công cụ nào kết hợp giải thích AI với scaffolding giáo dục.</p>
                         </div>
-                        <p><strong>Sử Dụng Tính Năng:</strong> AI Explanation 85%, One-Click Fix 70%, Learn Module 45% (sau 3 iterations), Inline Errors 95%</p>
+                        <div class="project-section">
+                            <h4>Định Nghĩa: Chiến Lược & Lập Kế Hoạch</h4>
+                            <p><strong>Tầm Nhìn:</strong> Biến thông báo lỗi thành cơ hội học tập cho lập trình viên mới.</p>
+                            <p><strong>Ưu Tiên Tính Năng (RICE):</strong></p>
+                            <ol>
+                                <li><strong>One-Click Fix</strong> (RICE: 600)</li>
+                                <li><strong>AI Error Explanations</strong> (RICE: 400)</li>
+                                <li><strong>Learn from Error Module</strong> (RICE: 131)</li>
+                            </ol>
+                            <p><strong>Metrics Thành Công:</strong> Giảm 60% thời gian debug, kích hoạt 40%, 10+ lần/tuần sử dụng</p>
+                        </div>
+                        <div class="project-section">
+                            <h4>Xây Dựng: Thực Thi Agile</h4>
+                            <p>Dẫn dắt 8 sprint 2 tuần. Viết 40+ user stories. Quản lý backlog 50+ items.</p>
+                            <ul>
+                                <li><strong>Sprint 1-2:</strong> Nền tảng & engine phát hiện lỗi (4 ngôn ngữ)</li>
+                                <li><strong>Sprint 3-4:</strong> Tích hợp AI — phản hồi <3 giây, độ chính xác 90%+</li>
+                                <li><strong>Sprint 5-6:</strong> One-click fix 80%+ accuracy, khả năng undo</li>
+                                <li><strong>Sprint 7-8:</strong> Launch — tài liệu, onboarding, beta testing</li>
+                            </ul>
+                        </div>
+                        <div class="project-section">
+                            <h4>Đo Lường: Tác Động</h4>
+                            <div class="metrics-grid">
+                                <div class="metric"><div class="metric-value">60%</div><div class="metric-label">Giảm thời gian debug</div></div>
+                                <div class="metric"><div class="metric-value">40%</div><div class="metric-label">Tỷ lệ kích hoạt</div></div>
+                                <div class="metric"><div class="metric-value">4.2/5</div><div class="metric-label">Hài lòng người dùng</div></div>
+                                <div class="metric"><div class="metric-value">70+</div><div class="metric-label">Stakeholders</div></div>
+                            </div>
+                        </div>
+                        <div class="project-section">
+                            <h4>Bài Học Kinh Nghiệm</h4>
+                            <ul>
+                                <li><strong>Tiếp cận lấy người dùng làm trung tâm:</strong> Tính năng từ pain points thực tế có tỷ lệ adoption cao gấp 3 lần</li>
+                                <li><strong>Quyết định dựa trên dữ liệu:</strong> Review metrics hàng tuần ngăn xây dựng sai tính năng</li>
+                                <li><strong>Iteration hơn perfection:</strong> Ship MVP và iterate hiệu quả hơn lập kế hoạch kéo dài</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="project-section">
-                        <h4>Cải Tiến Sau Launch</h4>
-                        <ul>
-                            <li><strong>Learn Module:</strong> 30%→45% engagement (+50% cải thiện)</li>
-                            <li><strong>Hiệu Năng:</strong> 5s→<2s phản hồi (cải thiện 60%)</li>
-                            <li><strong>Mở Rộng Ngôn Ngữ:</strong> Thêm C++ và Java, mở rộng 25% users</li>
-                        </ul>
+                    <button class="expand-btn" data-target="project-1-content"><span>Xem Chi Tiết</span><span class="arrow">▼</span></button>
+                    <div class="project-links">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=DinhNgocMinh.intellifix" class="btn btn-primary" target="_blank">VS Code Marketplace →</a>
+                        <a href="https://github.com/mintdunno/IntelliFix-Extension" class="btn btn-secondary" target="_blank">Source Code →</a>
                     </div>
-                </div>
-
-                <button class="expand-btn" data-target="project-1-content"><span>Xem Thêm</span><span class="arrow">▼</span></button>
-                <div class="project-links">
-                    <a href="https://marketplace.visualstudio.com/items?itemName=DinhNgocMinh.intellifix" class="btn btn-primary" target="_blank">VS Code Marketplace →</a>
-                    <a href="https://github.com/mintdunno/IntelliFix-Extension" class="btn btn-secondary" target="_blank">Source Code →</a>
                 </div>
             </div>
 
             <!-- Equipment System -->
             <div class="project-card reveal">
-                <div class="project-header">
-                    <div class="project-number">02</div>
-                    <h3 class="project-title">
-                        <span class="icon icon-lg"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
-                        Hệ Thống Quản Lý Thiết Bị Cho Mượn
-                    </h3>
+
+                <div class="project-info">
+                    <div class="project-info-main">
+                        <h3 class="project-title">Hệ Thống Quản Lý Thiết Bị Cho Mượn</h3>
+                        <p class="project-description">Hệ thống quản lý cho mượn thiết bị đại học với phân quyền, chống xung đột đặt chỗ, và dashboard báo cáo phân tích sử dụng.</p>
+                    </div>
+                    <div class="project-cta">
+                        <a href="#">Dự Án Học Thuật →</a>
+                    </div>
+                </div>
+
+                <div class="project-detail">
                     <div class="project-meta">
-                        <p><strong>Loại:</strong> Dự Án Học Thuật  ·  <strong>Vai trò:</strong> BA & System Developer</p>
+                        <div class="project-meta-item"><strong>Loại</strong>Dự Án Học Thuật</div>
+                        <div class="project-meta-item"><strong>Vai trò</strong>BA & System Developer</div>
                     </div>
                     <div class="project-tags">
                         <span class="tag">Phân Tích Yêu Cầu</span><span class="tag">BRD</span><span class="tag">UML</span><span class="tag">OOP</span>
                     </div>
-                </div>
-                <div class="project-content collapsed" id="project-2-content">
-                    <div class="project-section">
-                        <h4>Phân Tích & Triển Khai</h4>
-                        <p>Thu thập yêu cầu từ nhân viên, sinh viên, quản trị viên. Tạo BRD, use case diagrams, 3 user personas. Xây dựng 6 tính năng: catalog, đặt chỗ, phân quyền RBAC, theo dõi cho mượn, dashboard, bảo trì.</p>
+                    <div class="project-content collapsed" id="project-2-content">
+                        <div class="project-section">
+                            <h4>Phân Tích & Triển Khai</h4>
+                            <p>Thu thập yêu cầu từ nhân viên, sinh viên, quản trị viên. Tạo BRD, use case diagrams, 3 user personas. Xây dựng 6 tính năng: catalog, đặt chỗ, phân quyền RBAC, theo dõi cho mượn, dashboard, bảo trì.</p>
+                        </div>
+                        <div class="project-section">
+                            <h4>Tính Năng Chính</h4>
+                            <div class="features-grid">
+                                <div class="feature"><h5>Catalog Thiết Bị</h5><p>Tìm kiếm với theo dõi tình trạng</p></div>
+                                <div class="feature"><h5>Hệ Thống Đặt Chỗ</h5><p>Đặt online với chống xung đột</p></div>
+                                <div class="feature"><h5>RBAC</h5><p>Phân quyền theo vai trò</p></div>
+                                <div class="feature"><h5>Theo Dõi Cho Mượn</h5><p>Lịch sử cho mượn đầy đủ</p></div>
+                                <div class="feature"><h5>Dashboard Báo Cáo</h5><p>Phân tích sử dụng và xu hướng</p></div>
+                                <div class="feature"><h5>Lịch Bảo Trì</h5><p>Theo dõi bảo trì phòng ngừa</p></div>
+                            </div>
+                        </div>
                     </div>
+                    <button class="expand-btn" data-target="project-2-content"><span>Xem Chi Tiết</span><span class="arrow">▼</span></button>
+                    <div class="project-links"><a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Theo Yêu Cầu</a></div>
                 </div>
-                <button class="expand-btn" data-target="project-2-content"><span>Xem Thêm</span><span class="arrow">▼</span></button>
-                <div class="project-links"><a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Theo Yêu Cầu</a></div>
             </div>
 
             <!-- RENTMATE -->
             <div class="project-card reveal">
-                <div class="project-header">
-                    <div class="project-number">03</div>
-                    <h3 class="project-title">
-                        <span class="icon icon-lg"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>
-                        RENTMATE — Nền Tảng Cho Thuê Nhà
-                    </h3>
+
+                <div class="project-info">
+                    <div class="project-info-main">
+                        <h3 class="project-title">RENTMATE — Nền Tảng Cho Thuê Nhà</h3>
+                        <p class="project-description">Marketplace hai chiều đơn giản hóa quy trình cho thuê với đăng tin, tìm kiếm nâng cao, nhắn tin real-time và quản lý tài liệu số.</p>
+                    </div>
+                    <div class="project-cta">
+                        <a href="#">Dự Án Học Thuật →</a>
+                    </div>
+                </div>
+
+                <div class="project-detail">
                     <div class="project-meta">
-                        <p><strong>Loại:</strong> Dự Án Cá Nhân  ·  <strong>Stack:</strong> Spring Boot · React · PostgreSQL</p>
+                        <div class="project-meta-item"><strong>Loại</strong>Dự Án Cá Nhân</div>
+                        <div class="project-meta-item"><strong>Vai trò</strong>BA & Full-Stack Developer</div>
+                        <div class="project-meta-item"><strong>Stack</strong>Spring Boot · React · PostgreSQL</div>
                     </div>
                     <div class="project-tags">
                         <span class="tag">SRS</span><span class="tag">MoSCoW</span><span class="tag">Personas</span><span class="tag">Full-Stack</span><span class="tag">UAT</span>
                     </div>
+                    <div class="project-content collapsed" id="project-3-content">
+                        <div class="project-section">
+                            <h4>Phát Triển & Triển Khai</h4>
+                            <p>SRS với MoSCoW. Full-stack: Spring Boot + React + PostgreSQL. UAT 10 users. 6 tính năng: xác thực, quản lý bất động sản, tìm kiếm, tài liệu, thanh toán, nhắn tin.</p>
+                        </div>
+                        <div class="project-section">
+                            <h4>Tính Năng Chính</h4>
+                            <div class="features-grid">
+                                <div class="feature"><h5>Xác Thực</h5><p>Đăng ký & đăng nhập bảo mật BCrypt</p></div>
+                                <div class="feature"><h5>Quản Lý Bất Động Sản</h5><p>CRUD đầy đủ với upload ảnh</p></div>
+                                <div class="feature"><h5>Tìm Kiếm & Lọc</h5><p>Lọc theo vị trí, giá, tiện ích</p></div>
+                                <div class="feature"><h5>Xử Lý Tài Liệu</h5><p>Upload và quản lý tài liệu số</p></div>
+                                <div class="feature"><h5>Theo Dõi Thanh Toán</h5><p>Theo dõi tiền thuê và lịch sử</p></div>
+                                <div class="feature"><h5>Nhắn Tin</h5><p>Chat real-time giữa người thuê và chủ nhà</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="expand-btn" data-target="project-3-content"><span>Xem Chi Tiết</span><span class="arrow">▼</span></button>
+                    <div class="project-links"><a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Theo Yêu Cầu</a></div>
                 </div>
-                <div class="project-content collapsed" id="project-3-content">
-                    <div class="project-section">
-                        <h4>Phát Triển & Triển Khai</h4>
-                        <p>SRS với MoSCoW. Full-stack: Spring Boot + React + PostgreSQL. UAT 10 users. 6 tính năng: xác thực, quản lý bất động sản, tìm kiếm, tài liệu, thanh toán, nhắn tin.</p>
+            </div>
+        </div>
+    </section>
+    <section id="approach" class="approach">
+        <div class="container">
+            <div class="approach-header reveal">
+                <div class="section-label">Mindset</div>
+                <h2 class="approach-heading">Lối Tư Duy,<br><em>Kết nối mọi điểm chạm.</em></h2>
+                <p class="section-description" style="max-width: 600px; margin: 0 auto; text-align: center;">Mọi quyết định phân tích đều bắt nguồn từ một tư duy logic và bao quát.</p>
+            </div>
+
+            <div class="mindset-container reveal">
+                <!-- SVG Connections -->
+                <svg class="mindset-lines" viewBox="0 0 1000 500" preserveAspectRatio="none">
+                    <path class="mindset-line" d="M 500 250 Q 300 50 125 50" />
+                    <path class="mindset-line" d="M 500 250 Q 300 250 75 250" />
+                    <path class="mindset-line" d="M 500 250 Q 300 450 125 450" />
+                    <path class="mindset-line" d="M 500 250 Q 700 50 875 50" />
+                    <path class="mindset-line" d="M 500 250 Q 700 250 925 250" />
+                    <path class="mindset-line" d="M 500 250 Q 700 450 875 450" />
+                </svg>
+
+                <!-- Glowing Brain Center -->
+                <div class="mindset-center">
+                    <svg viewBox="0 0 960 901" fill="currentColor">
+                        <path fill-rule="evenodd" d="M 530 507 L 529 504 L 524 499 L 517 498 L 512 500 L 508 505 L 508 512 L 506 523 L 504 529 L 501 535 L 499 537 L 498 540 L 495 544 L 485 554 L 479 558 L 471 562 L 461 565 L 453 566 L 439 565 L 432 563 L 429 561 L 427 561 L 423 559 L 421 557 L 418 556 L 405 544 L 398 533 L 398 531 L 396 528 L 396 526 L 394 523 L 394 521 L 391 518 L 387 516 L 381 516 L 377 518 L 375 520 L 373 524 L 373 530 L 376 539 L 380 547 L 382 549 L 383 552 L 390 561 L 398 569 L 406 575 L 409 576 L 411 578 L 419 582 L 431 586 L 442 588 L 459 588 L 465 587 L 479 583 L 491 577 L 501 570 L 511 560 L 519 549 L 524 539 L 524 537 L 526 534 L 530 516 Z M 261 433 L 259 430 L 254 427 L 247 427 L 246 428 L 245 428 L 240 433 L 239 437 L 239 443 L 236 455 L 229 468 L 225 473 L 218 479 L 209 484 L 203 486 L 198 487 L 184 487 L 169 483 L 156 476 L 151 472 L 141 462 L 139 461 L 131 461 L 129 462 L 125 466 L 124 468 L 124 476 L 126 479 L 136 489 L 149 498 L 159 503 L 161 503 L 164 505 L 175 508 L 181 509 L 201 509 L 211 507 L 217 505 L 220 503 L 222 503 L 224 501 L 229 499 L 238 492 L 246 483 L 250 477 L 256 465 L 259 456 L 261 448 L 262 439 Z M 429 332 L 424 325 L 410 313 L 404 309 L 392 303 L 390 303 L 387 301 L 377 298 L 366 296 L 348 296 L 337 298 L 328 301 L 318 306 L 307 314 L 298 324 L 289 339 L 289 341 L 287 344 L 284 353 L 281 368 L 281 376 L 284 381 L 287 383 L 290 384 L 295 384 L 299 382 L 301 380 L 303 376 L 304 371 L 304 365 L 307 354 L 315 339 L 327 327 L 336 322 L 342 320 L 351 318 L 363 318 L 377 321 L 380 323 L 382 323 L 392 328 L 398 332 L 404 337 L 411 345 L 415 347 L 421 347 L 424 346 L 428 342 L 429 340 Z M 511 271 L 507 275 L 505 280 L 504 286 L 504 303 L 508 321 L 515 337 L 527 354 L 539 366 L 560 380 L 562 380 L 576 387 L 584 396 L 588 404 L 590 411 L 590 418 L 586 428 L 580 434 L 572 438 L 568 442 L 567 445 L 568 453 L 572 457 L 577 459 L 583 458 L 592 453 L 602 444 L 608 435 L 608 433 L 610 430 L 612 422 L 612 407 L 608 394 L 608 391 L 615 391 L 631 388 L 640 385 L 650 380 L 660 373 L 670 363 L 675 354 L 674 347 L 671 343 L 667 341 L 660 341 L 640 360 L 627 366 L 619 368 L 602 369 L 589 367 L 577 363 L 559 353 L 554 349 L 540 334 L 531 318 L 527 305 L 526 299 L 526 290 L 528 283 L 527 277 L 522 271 L 519 270 Z M 99 375 L 81 405 L 69 437 L 63 469 L 63 501 L 76 550 L 88 572 L 110 597 L 137 616 L 184 634 L 239 642 L 324 639 L 359 663 L 401 681 L 439 688 L 480 688 L 547 730 L 573 751 L 628 818 L 717 818 L 724 813 L 725 803 L 712 776 L 703 746 L 701 718 L 729 705 L 754 688 L 783 655 L 815 643 L 840 625 L 871 585 L 887 541 L 891 488 L 883 450 L 863 410 L 837 385 L 826 344 L 796 298 L 758 264 L 718 241 L 669 225 L 617 222 L 595 207 L 551 193 L 469 191 L 429 200 L 395 219 L 365 213 L 325 213 L 261 230 L 231 246 L 210 262 L 185 290 L 172 315 L 134 339 Z M 116 390 L 175 340 L 188 392 L 202 408 L 211 407 L 217 397 L 198 349 L 204 314 L 235 274 L 278 248 L 321 236 L 369 236 L 445 269 L 452 254 L 420 230 L 473 213 L 544 215 L 594 238 L 633 289 L 645 288 L 649 275 L 631 245 L 654 245 L 722 268 L 778 312 L 801 344 L 812 375 L 772 367 L 736 369 L 693 385 L 689 401 L 701 406 L 735 392 L 768 389 L 823 410 L 848 436 L 865 472 L 865 537 L 839 593 L 794 628 L 793 569 L 784 562 L 773 567 L 773 617 L 763 644 L 738 672 L 681 707 L 680 744 L 695 796 L 638 796 L 589 735 L 506 678 L 541 656 L 571 617 L 590 642 L 617 656 L 648 657 L 675 645 L 700 609 L 702 582 L 696 574 L 681 578 L 677 607 L 665 624 L 631 636 L 596 615 L 589 597 L 592 573 L 613 535 L 656 506 L 694 506 L 716 517 L 731 536 L 743 535 L 746 519 L 731 500 L 688 482 L 655 483 L 626 494 L 590 528 L 549 610 L 520 644 L 474 664 L 422 661 L 366 641 L 325 606 L 302 565 L 300 513 L 325 462 L 354 438 L 384 426 L 437 428 L 449 445 L 447 471 L 465 472 L 471 441 L 454 413 L 478 391 L 484 377 L 480 364 L 467 363 L 459 379 L 434 398 L 385 403 L 342 419 L 299 459 L 281 497 L 276 548 L 302 619 L 243 620 L 178 609 L 142 593 L 110 564 L 89 519 L 85 472 L 95 429 Z" />
+                    </svg>
+                </div>
+
+                <div class="mindset-nodes">
+                    <!-- Left Side -->
+                    <div class="mindset-node node-1">
+                        <h4>Requirements Clarity</h4>
+                        <p>Đảm bảo mọi yêu cầu đều minh bạch, triệt để và đo lường được trước khi code.</p>
+                    </div>
+                    <div class="mindset-node node-2">
+                        <h4>Data-Driven</h4>
+                        <p>Quyết định không dựa vào cảm tính. Mọi tính năng đều phải được bảo chứng bằng số liệu và A/B Test.</p>
+                    </div>
+                    <div class="mindset-node node-3">
+                        <h4>Agile Adaptability</h4>
+                        <p>Linh hoạt xoay chuyển, ưu tiên giá trị người dùng và thích ứng nhanh với các Sprint ngắn.</p>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="mindset-node node-4">
+                        <h4>Scalable Solutions</h4>
+                        <p>Thiết kế kiến trúc hệ thống, API có khả năng mở rộng trong tương lai, không chỉ giải quyết tạm thời.</p>
+                    </div>
+                    <div class="mindset-node node-5">
+                        <h4>User-Centric Empathy</h4>
+                        <p>Luôn đặt bản thân vào vị trí của End-user để tạo ra luồng trải nghiệm (UX) mượt mà nhất.</p>
+                    </div>
+                    <div class="mindset-node node-6">
+                        <h4>Cross-Functional Bridge</h4>
+                        <p>Là cầu nối ngôn ngữ hoàn hảo, dịch từ yêu cầu Business phức tạp sang ngôn ngữ của team Dev.</p>
                     </div>
                 </div>
-                <button class="expand-btn" data-target="project-3-content"><span>Xem Thêm</span><span class="arrow">▼</span></button>
-                <div class="project-links"><a href="#" class="btn btn-primary disabled">Dự Án Học Thuật — Code Theo Yêu Cầu</a></div>
             </div>
         </div>
     </section>
 
-    <hr class="section-sep">
-
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">
-                    <span class="icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
-                    Kỹ năng
-                </div>
-                <h2 class="section-title">Kỹ Năng & Năng Lực</h2>
-                <div class="section-divider"></div>
+            <div class="reveal">
+                <div class="section-label">Kỹ Năng</div>
+                <h2 class="section-heading">Kỹ Năng & Năng Lực</h2>
             </div>
-
             <div class="skills-grid stagger-children reveal">
                 <div class="skill-category">
                     <h3>
                         <span class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
                         Phân Tích Nghiệp Vụ
                     </h3>
-                    <div class="skill-group">
-                        <div class="skill-group-title">Yêu Cầu</div>
-                        <div class="skill-group-items">Thu thập, Phân tích, Tài liệu hóa, Truy xuất nguồn gốc</div>
-                    </div>
-                    <div class="skill-group">
-                        <div class="skill-group-title">Artifacts</div>
-                        <div class="skill-group-items">BRD, SRS, User Stories, Use Cases, Acceptance Criteria</div>
-                    </div>
-                    <div class="skill-group">
-                        <div class="skill-group-title">Mô Hình</div>
-                        <div class="skill-group-items">UML (Use Case, Activity, Sequence), Workflows, Process Maps</div>
-                    </div>
+                    <div class="skill-group"><div class="skill-group-title">Yêu Cầu</div><div class="skill-group-items">Thu thập, Phân tích, Tài liệu hóa, Truy xuất nguồn gốc</div></div>
+                    <div class="skill-group"><div class="skill-group-title">Artifacts</div><div class="skill-group-items">BRD, SRS, User Stories, Use Cases, Acceptance Criteria</div></div>
+                    <div class="skill-group"><div class="skill-group-title">Mô Hình</div><div class="skill-group-items">UML (Use Case, Activity, Sequence), Workflows, Process Maps</div></div>
                 </div>
-
                 <div class="skill-category">
                     <h3>
                         <span class="icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
                         Công Cụ & Kỹ Thuật
                     </h3>
-                    <div class="skill-group">
-                        <div class="skill-group-title">BA Tools</div>
-                        <div class="skill-group-items">Jira, Confluence, Microsoft Visio, Lucidchart</div>
-                    </div>
-                    <div class="skill-group">
-                        <div class="skill-group-title">Phân Tích Dữ Liệu</div>
-                        <div class="skill-group-items">SQL (PostgreSQL, MySQL), Excel, Data Modeling</div>
-                    </div>
-                    <div class="skill-group">
-                        <div class="skill-group-title">Dev & Agile</div>
-                        <div class="skill-group-items">Python, Java, C#, TypeScript · Scrum, Sprint Planning, Backlog Grooming</div>
-                    </div>
-                    <div class="skill-group">
-                        <div class="skill-group-title">API & Hệ Thống</div>
-                        <div class="skill-group-items">RESTful API, System Integration, Swagger, Git, SDLC</div>
-                    </div>
+                    <div class="skill-group"><div class="skill-group-title">BA Tools</div><div class="skill-group-items">Jira, Confluence, Microsoft Visio, Lucidchart</div></div>
+                    <div class="skill-group"><div class="skill-group-title">Phân Tích Dữ Liệu</div><div class="skill-group-items">SQL (PostgreSQL, MySQL), Excel, Data Modeling</div></div>
+                    <div class="skill-group"><div class="skill-group-title">Dev & Agile</div><div class="skill-group-items">Python, Java, C#, TypeScript · Scrum, Sprint Planning, Backlog Grooming</div></div>
+                    <div class="skill-group"><div class="skill-group-title">API & Hệ Thống</div><div class="skill-group-items">RESTful API, System Integration, Swagger, Git, SDLC</div></div>
                 </div>
             </div>
 
             <div class="mindsets reveal">
                 <h3>Tư Duy</h3>
                 <div class="mindsets-grid stagger-children">
-                    <div class="mindset-card">
-                        <h4><span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span> Ưu Tiên Vấn Đề</h4>
-                        <p>Bắt đầu bằng việc hiểu yêu cầu, không nhảy vào giải pháp</p>
-                    </div>
-                    <div class="mindset-card">
-                        <h4><span class="icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span> Người Dùng Là Trung Tâm</h4>
-                        <p>Mọi quyết định bắt đầu từ "Người dùng cần gì?"</p>
-                    </div>
-                    <div class="mindset-card">
-                        <h4><span class="icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span> Dựa Trên Dữ Liệu</h4>
-                        <p>Tin tưởng dữ liệu, nhưng biết khi nào nên tin trực giác</p>
-                    </div>
-                    <div class="mindset-card">
-                        <h4><span class="icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span> Xu Hướng Hành Động</h4>
-                        <p>Thích ship và iterate hơn chờ hoàn hảo</p>
-                    </div>
-                    <div class="mindset-card">
-                        <h4><span class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span> Đồng Cảm Kỹ Thuật</h4>
-                        <p>Hiểu ràng buộc kỹ thuật, làm việc cùng thực tế</p>
-                    </div>
-                    <div class="mindset-card">
-                        <h4><span class="icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span> Tư Duy Phát Triển</h4>
-                        <p>Mỗi lần ra mắt là cơ hội học hỏi</p>
-                    </div>
+                    <div class="mindset-card"><h4><span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>Ưu Tiên Vấn Đề</h4><p>Bắt đầu bằng việc hiểu yêu cầu, không nhảy vào giải pháp</p></div>
+                    <div class="mindset-card"><h4><span class="icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>Người Dùng Là Trung Tâm</h4><p>Mọi quyết định bắt đầu từ "Người dùng cần gì?"</p></div>
+                    <div class="mindset-card"><h4><span class="icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>Dựa Trên Dữ Liệu</h4><p>Tin tưởng dữ liệu, nhưng biết khi nào nên tin trực giác</p></div>
+                    <div class="mindset-card"><h4><span class="icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>Xu Hướng Hành Động</h4><p>Thích ship và iterate hơn chờ hoàn hảo</p></div>
+                    <div class="mindset-card"><h4><span class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>Đồng Cảm Kỹ Thuật</h4><p>Hiểu ràng buộc kỹ thuật, làm việc cùng thực tế</p></div>
+                    <div class="mindset-card"><h4><span class="icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Tư Duy Phát Triển</h4><p>Mỗi lần ra mắt là cơ hội học hỏi</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr class="section-sep">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="reveal">
+                    <h2 class="about-heading">Phân tích cẩn thận.<br><em>Hệ thống đáng tin.</em></h2>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <p class="about-bio">
+                        Tôi là Phú, một Business Analyst chuyên nghiệp tập trung vào việc xây dựng các giải pháp với yêu cầu rõ ràng, hệ thống đáng tin cậy và tư duy hướng sản phẩm. Với kinh nghiệm thực chiến trong các dự án ngân hàng doanh nghiệp và sản phẩm công nghệ giáo dục, tôi có thế mạnh trong việc làm cầu nối giữa đội ngũ kỹ thuật và khách hàng, chuyển đổi các bài toán kinh doanh phức tạp thành các giải pháp kỹ thuật khả thi.
+                    </p>
+                    <a href="#contact" class="about-cta">Liên hệ →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label">
-                    <span class="icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-                    Liên hệ
+            <h2 class="contact-heading reveal">Hãy cùng xây dựng<br><em>điều ý nghĩa.</em></h2>
+            <div class="contact-grid reveal">
+                <div class="contact-block">
+                    <div class="contact-block-title">Email</div>
+                    <a href="mailto:nguyenquangphu0402@gmail.com" class="contact-email">nguyenquangphu0402@gmail.com</a>
                 </div>
-                <h2 class="section-title">Hãy Cùng Xây Dựng Điều Tuyệt Vời</h2>
-                <div class="section-divider"></div>
-            </div>
-            <p class="contact-description reveal">
-                Tôi muốn thảo luận về cách đóng góp cho nhóm của bạn. Dù là dự án, tư duy phân tích, hay cơ hội hợp tác — tôi luôn sẵn lòng.
-            </p>
-            <div class="contact-info reveal">
-                <div class="contact-details">
-                    <p><strong>Email</strong> nguyenquangphu0402@gmail.com</p>
-                    <p><strong>SĐT</strong> 0964717953</p>
-                    <p><strong>Địa chỉ</strong> Quận Gò Vấp, TP. Hồ Chí Minh</p>
-                    <p><strong>Ngôn ngữ</strong> Tiếng Anh (Professional), Tiếng Việt (Bản ngữ)</p>
+                <div class="contact-block">
+                    <div class="contact-block-title">Kết Nối</div>
+                    <ul class="contact-elsewhere">
+                        <li><a href="https://github.com/quangphu1310" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/nguyenquangphu2002/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:nguyenquangphu0402@gmail.com">Email</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="contact-links reveal">
-                <a href="mailto:nguyenquangphu0402@gmail.com" class="contact-btn">Gửi Email →</a>
-                <a href="https://www.linkedin.com/in/nguyenquangphu2002/" class="contact-btn" target="_blank">LinkedIn →</a>
+                <div class="contact-block">
+                    <div class="contact-block-title">Sẵn Sàng</div>
+                    <p class="contact-availability">Mở cho vị trí BA, product teams, và thử thách phân tích.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Nguyễn Quang Phú. Xây dựng với đam mê về sản phẩm và công nghệ.</p>
-            <p class="footer-note">Đã xuất bản: IntelliFix extension trên VS Code Marketplace</p>
+            <span class="footer-text">Thiết kế & phát triển tại TP. Hồ Chí Minh</span>
+            <div class="footer-links">
+                <a href="https://github.com/quangphu1310" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/nguyenquangphu2002/" target="_blank">LinkedIn</a>
+                <a href="mailto:nguyenquangphu0402@gmail.com">Email</a>
+            </div>
         </div>
     </footer>
 
